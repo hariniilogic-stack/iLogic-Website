@@ -1,0 +1,9 @@
+{
+  "name": "ilogic-tech-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "iLogic Tech company website",
+  "scripts": {
+    "check": "node --check script.js"
+  }
+}
