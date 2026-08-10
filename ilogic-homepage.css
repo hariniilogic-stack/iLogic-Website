@@ -1,0 +1,1023 @@
+/* =============================================================
+   iLogic Tech — Homepage CSS
+   Matched exactly to ilogic-homepage-final.html structure
+   (pure semantic HTML, no class names)
+   ============================================================= */
+
+/* ── Custom Properties ── */
+:root {
+  --bg: #fcfaff;
+  --surface: rgba(255, 255, 255, 0.94);
+  --surface-strong: #fff;
+  --text: #2f2444;
+  --text-body: #241a36;
+  --muted: #756a8b;
+  --line: rgba(120, 91, 170, 0.10);
+  --line-strong: rgba(120, 91, 170, 0.16);
+  --primary: #8b5cf6;
+  --primary-strong: #6d3fd2;
+  --accent: #e879c5;
+  --shadow: 0 18px 45px rgba(110, 84, 155, 0.09);
+  --shadow-soft: 0 10px 24px rgba(110, 84, 155, 0.06);
+  --radius: 24px;
+  --radius-sm: 16px;
+  --container: 1180px;
+  --header-height: 72px;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 106.25%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+  color: var(--text);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 245, 0.86) 0,
+    rgba(252, 248, 242, 0.80) 100%
+  );
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding-top: var(--header-height);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  color: #1b1327;
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0 0 1rem;
+}
+
+p:last-child { margin-bottom: 0; }
+
+ul, ol { padding-left: 1.25rem; }
+
+/* ── Container helper (applied via max-width on sections) ── */
+header,
+main > section,
+footer > div,
+footer > nav,
+footer > p {
+  width: min(calc(100% - 2rem), var(--container));
+  margin-inline: auto;
+}
+
+/* =============================================================
+   HEADER / NAV
+   ============================================================= */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(120, 91, 170, 0.08);
+  box-shadow: var(--shadow-soft);
+}
+
+header nav {
+  width: min(calc(100% - 2rem), var(--container));
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 0.9rem 0;
+}
+
+/* Logo */
+header nav > a img {
+  height: 3rem;
+  width: auto;
+}
+
+/* Nav links */
+header nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav > ul > li > a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  color: #5f5674;
+  font-weight: 600;
+  font-size: 0.93rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+header nav > ul > li > a:hover {
+  background: rgba(139, 92, 246, 0.07);
+  color: var(--primary-strong);
+}
+
+/* =============================================================
+   SHARED SECTION STYLES
+   ============================================================= */
+main > section {
+  padding: 3.5rem 0;
+}
+
+main > section h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  line-height: 1.15;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+main > section > p {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  max-width: 54rem;
+  margin-bottom: 1.5rem;
+}
+
+main > section > ul {
+  margin-bottom: 1.5rem;
+  display: grid;
+  gap: 0.55rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+main > section > ul li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+main > section > ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+/* CTA anchor links inside sections */
+main > section > a,
+main > section > article > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(139, 92, 246, 0.18);
+  margin-top: 0.5rem;
+}
+
+main > section > a:hover,
+main > section > article > a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(139, 92, 246, 0.26);
+}
+
+/* =============================================================
+   HERO — #home
+   ============================================================= */
+#home {
+  padding: 2.5rem 0 4rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 249, 242, 0.82) 0,
+    rgba(255, 251, 247, 0.66) 55%,
+    rgba(255, 255, 255, 0.84) 100%
+  );
+  border-bottom: 1px solid rgba(152, 126, 102, 0.12);
+}
+
+#home h1 {
+  font-size: clamp(1.85rem, 3.6vw, 2.8rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  color: var(--text);
+  max-width: 42rem;
+  margin-bottom: 1.25rem;
+}
+
+#home > p {
+  max-width: 38rem;
+  font-size: 1.08rem;
+  line-height: 1.72;
+  margin-bottom: 2rem;
+}
+
+/* Stats list */
+#home > ul[aria-label="Company highlights"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+#home > ul[aria-label="Company highlights"] li {
+  padding: 1rem 1.25rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.96);
+  box-shadow: 0 10px 24px rgba(139, 92, 246, 0.06);
+  min-width: 9rem;
+}
+
+#home > ul[aria-label="Company highlights"] li::before {
+  display: none;
+}
+
+#home > ul[aria-label="Company highlights"] li strong {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--primary-strong);
+  font-weight: 800;
+}
+
+#home > ul[aria-label="Company highlights"] li span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-family: inherit;
+}
+
+/* Hero CTA links */
+#home > a {
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+#home > a:last-of-type {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--line-strong);
+  color: var(--primary-strong);
+  box-shadow: none;
+}
+
+#home > a:last-of-type:hover {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(139, 92, 246, 0.18);
+}
+
+/* =============================================================
+   ABOUT — #about
+   ============================================================= */
+#about {
+  background: rgba(255, 255, 255, 0.52);
+  border-top: 1px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(83, 53, 135, 0.06);
+}
+
+#about > p {
+  max-width: 52rem;
+}
+
+/* =============================================================
+   EXPERTISE — #expertise
+   ============================================================= */
+#expertise {
+  padding: 3.5rem 0;
+}
+
+/* =============================================================
+   PRODUCTS — #products
+   ============================================================= */
+#products {
+  background: rgba(255, 255, 255, 0.52);
+  border-top: 1px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(83, 53, 135, 0.06);
+}
+
+#products > p {
+  max-width: 46rem;
+  margin-bottom: 2rem;
+}
+
+/* Product articles grid */
+#products article,
+#services article,
+#solutions article {
+  background: var(--surface);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#products article:hover,
+#services article:hover,
+#solutions article:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+/* Grid layout for articles */
+#products > article,
+#services > article,
+#solutions > article {
+  /* inline — wrapped by implicit flow; see grid wrapper below */
+}
+
+/* Wrap articles in auto-grid using adjacent sibling trick via display on section */
+#products,
+#services,
+#solutions {
+  /* We can't add wrapper divs, so we use CSS grid on the section
+     and push h2/p to span full width */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Make the heading and intro text span full width */
+#products h2,
+#products > p,
+#services h2,
+#services > p,
+#solutions h2,
+#solutions > p {
+  grid-column: 1 / -1;
+}
+
+/* Product figure */
+#products article figure,
+#solutions article figure {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #fbf7ff, #fff5fb);
+  padding: 0.5rem;
+}
+
+#products article figure img,
+#solutions article figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
+}
+
+#products article h3,
+#services article h3,
+#solutions article h3 {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+#products article p,
+#services article p,
+#solutions article p {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+  color: #3a2c52;
+}
+
+#products article ul,
+#services article ul,
+#solutions article ul {
+  margin-bottom: 1.1rem;
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.83rem;
+  list-style: none;
+  padding: 0;
+  color: var(--text);
+}
+
+#products article ul li,
+#services article ul li,
+#solutions article ul li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+#products article ul li::before,
+#services article ul li::before,
+#solutions article ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+/* Push CTA link to bottom */
+#products article,
+#services article,
+#solutions article {
+  display: flex;
+  flex-direction: column;
+}
+
+#products article > a,
+#services article > a,
+#solutions article > a {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.7rem 1.2rem;
+  font-size: 0.88rem;
+}
+
+/* =============================================================
+   SERVICES — #services
+   ============================================================= */
+#services {
+  background: rgba(255, 255, 255, 0.52);
+  border-top: 1px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(83, 53, 135, 0.06);
+}
+
+/* =============================================================
+   LANGUAGECERT — #languagecert
+   ============================================================= */
+#languagecert {
+  padding: 3.5rem 0;
+}
+
+#languagecert > a {
+  margin-top: 1rem;
+}
+
+/* =============================================================
+   SOLUTIONS — #solutions
+   ============================================================= */
+#solutions {
+  background: rgba(255, 255, 255, 0.52);
+  border-top: 1px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(83, 53, 135, 0.06);
+}
+
+/* =============================================================
+   TESTIMONIALS — #testimonials
+   ============================================================= */
+#testimonials {
+  padding: 3.5rem 0;
+}
+
+#testimonials h2 {
+  margin-bottom: 0.75rem;
+}
+
+#testimonials > p {
+  margin-bottom: 2rem;
+  max-width: 44rem;
+}
+
+/* Testimonials as a grid */
+#testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+#testimonials h2,
+#testimonials > p {
+  grid-column: 1 / -1;
+}
+
+#testimonials blockquote {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 1.5rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#testimonials blockquote:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+#testimonials blockquote::before {
+  content: "\201C";
+  position: absolute;
+  top: 0.75rem;
+  left: 1.1rem;
+  font-size: 3rem;
+  line-height: 1;
+  color: rgba(139, 92, 246, 0.18);
+  font-family: Georgia, serif;
+  pointer-events: none;
+}
+
+#testimonials blockquote p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #3a2c52;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+#testimonials blockquote footer {
+  border-top: 1px solid var(--line);
+  padding-top: 0.75rem;
+}
+
+#testimonials blockquote footer cite {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--primary-strong);
+}
+
+/* =============================================================
+   BRANCHES — #branches
+   ============================================================= */
+#branches {
+  background: rgba(255, 255, 255, 0.52);
+  border-top: 1px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(83, 53, 135, 0.06);
+  padding: 3.5rem 0;
+}
+
+#branches > p {
+  max-width: 44rem;
+  margin-bottom: 2rem;
+}
+
+/* Branches grid — address elements */
+#branches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+#branches h2,
+#branches > p {
+  grid-column: 1 / -1;
+}
+
+#branches address {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 1.4rem 1.5rem;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#branches address:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+#branches address h3 {
+  font-size: 1rem;
+  color: var(--text);
+  margin: 0 0 0.35rem;
+  line-height: 1.3;
+}
+
+#branches address p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #3a2c52;
+  margin: 0;
+  font-family: inherit;
+}
+
+#branches address a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary-strong);
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.14);
+  transition: background 0.2s ease, color 0.2s ease;
+  align-self: flex-start;
+}
+
+#branches address a:hover {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+  border-color: transparent;
+}
+
+/* =============================================================
+   CONTACT — #contact
+   ============================================================= */
+#contact {
+  padding: 3.5rem 0;
+}
+
+#contact h2 {
+  max-width: 38rem;
+  margin-bottom: 0.75rem;
+}
+
+#contact > p {
+  max-width: 44rem;
+  margin-bottom: 2rem;
+}
+
+/* Contact info box */
+#contact > div {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2rem;
+  max-width: 38rem;
+}
+
+#contact > div h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+#contact > div p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+}
+
+#contact > div p a {
+  color: var(--primary-strong);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(139, 92, 246, 0.3);
+}
+
+#contact > div p a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* Contact form */
+#contact form {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 2rem 2.25rem;
+  max-width: 42rem;
+  display: grid;
+  gap: 1rem;
+}
+
+#contact form label {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form select {
+  width: 100%;
+  padding: 0.82rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line-strong);
+  background: rgba(237, 229, 255, 0.45);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#contact form input:focus,
+#contact form textarea:focus,
+#contact form select:focus {
+  outline: none;
+  border-color: rgba(139, 92, 246, 0.42);
+  background: rgba(237, 229, 255, 0.72);
+  box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.10);
+}
+
+#contact form textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+#contact form button[type="submit"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(139, 92, 246, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  justify-self: start;
+}
+
+#contact form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(139, 92, 246, 0.26);
+}
+
+/* =============================================================
+   FOOTER
+   ============================================================= */
+footer {
+  background: linear-gradient(135deg, #2a1d45 0, #47246d 50%, #6a2d77 100%);
+  color: rgba(245, 247, 251, 0.90);
+  padding: 4rem 0 1.5rem;
+  margin-top: 4rem;
+}
+
+/* Override container for footer children */
+footer > div,
+footer > nav,
+footer > p {
+  width: min(calc(100% - 2rem), var(--container));
+  margin-inline: auto;
+}
+
+/* Footer grid layout */
+footer {
+  display: block; /* sections stacked, inner content gets grid */
+}
+
+footer > div,
+footer > nav {
+  margin-bottom: 2rem;
+}
+
+/* Wrap footer columns using a grid on an inner wrapper — since
+   we have no wrapper div, we stack them as individual blocks */
+@supports (display: grid) {
+  footer {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem 0 1.5rem;
+  }
+
+  footer > div,
+  footer > nav {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer > p:last-child {
+    grid-column: 1 / -1;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding-top: 1.5rem;
+    margin-top: 0.5rem;
+    color: rgba(245, 247, 251, 0.60);
+    font-size: 0.85rem;
+    font-family: inherit;
+    width: 100%;
+  }
+}
+
+footer h3,
+footer h4 {
+  color: #fff;
+  margin: 0 0 1rem;
+}
+
+footer h3 { font-size: 1.15rem; }
+footer h4 { font-size: 1rem; }
+
+footer > div > p {
+  color: rgba(245, 247, 251, 0.76);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+  font-family: inherit;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+footer li a {
+  color: rgba(245, 247, 251, 0.76);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+footer li a:hover {
+  color: #fff;
+}
+
+/* Social links in footer */
+footer > div > nav ul {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+footer > div > nav ul li a {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  color: rgba(245, 247, 251, 0.85);
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+footer > div > nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Footer bottom copyright */
+footer > p:last-child small {
+  color: inherit;
+}
+
+footer > p:last-child a {
+  color: rgba(245, 247, 251, 0.72);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+footer > p:last-child a:hover {
+  color: #fff;
+}
+
+/* =============================================================
+   RESPONSIVE — ≤ 1100px
+   ============================================================= */
+@media (max-width: 1100px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer > p:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* =============================================================
+   RESPONSIVE — ≤ 760px
+   ============================================================= */
+@media (max-width: 760px) {
+  :root { --header-height: 70px; }
+
+  header nav > ul {
+    display: none; /* simple collapse; can add JS toggle as needed */
+  }
+
+  header nav > a img {
+    height: 2.5rem;
+  }
+
+  #home h1 {
+    font-size: clamp(1.65rem, 6vw, 2.2rem);
+  }
+
+  #home > ul[aria-label="Company highlights"] li {
+    min-width: calc(50% - 0.85rem);
+    flex: 1 1 calc(50% - 0.85rem);
+  }
+
+  #products,
+  #services,
+  #solutions {
+    grid-template-columns: 1fr;
+  }
+
+  #testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  #branches {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  footer > p:last-child {
+    grid-column: auto;
+  }
+
+  #contact form {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+/* =============================================================
+   RESPONSIVE — ≤ 560px
+   ============================================================= */
+@media (max-width: 560px) {
+  :root { --header-height: 62px; }
+
+  main > section {
+    padding: 2rem 0;
+  }
+
+  main > section h2 {
+    font-size: clamp(1.45rem, 6vw, 1.9rem);
+  }
+
+  #home > ul[aria-label="Company highlights"] li {
+    min-width: 100%;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  #home > a {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-right: 0;
+  }
+
+  #contact > div {
+    padding: 1.1rem 1.1rem;
+  }
+
+  #contact form {
+    padding: 1.25rem 1rem;
+  }
+}
+
+
