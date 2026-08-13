@@ -1,0 +1,13 @@
+[33m49e130d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mnew-abarx[m[33m, [m[1;31morigin/new-abarx[m[33m)[m HEAD@{0}: commit: Add iLogic-Tech folder
+[33m6f3e823[m HEAD@{1}: commit: Resolve merge conflict in styles.css
+[33m37e051d[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/abarx[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2}: checkout: moving from abarna to new-abarx
+[33mdba3e5f[m[33m ([m[1;32mmain[m[33m, [m[1;32mabarna[m[33m)[m HEAD@{3}: reset: moving to HEAD
+[33mdba3e5f[m[33m ([m[1;32mmain[m[33m, [m[1;32mabarna[m[33m)[m HEAD@{4}: checkout: moving from main to abarna
+[33mdba3e5f[m[33m ([m[1;32mmain[m[33m, [m[1;32mabarna[m[33m)[m HEAD@{5}: reset: moving to dba3e5f
+[33m6136a5b[m HEAD@{6}: reset: moving to 6136a5b
+[33me1a1174[m HEAD@{7}: reset: moving to e1a1174
+[33m87eb11d[m HEAD@{8}: commit (merge): Merge branch 'main' of https://github.com/Meenakshi-dev1/ilogic-Tech
+[33me1a1174[m HEAD@{9}: commit: second update
+[33m6136a5b[m HEAD@{10}: commit (merge): Merge README
+[33mdba3e5f[m[33m ([m[1;32mmain[m[33m, [m[1;32mabarna[m[33m)[m HEAD@{11}: Branch: renamed refs/heads/master to refs/heads/main
+[33mdba3e5f[m[33m ([m[1;32mmain[m[33m, [m[1;32mabarna[m[33m)[m HEAD@{13}: commit (initial): first commit
