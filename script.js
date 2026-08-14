@@ -6157,36 +6157,13 @@
       '<div><div class="pill-tags"><span>Cisco Packet Tracer</span><span>Routing</span><span>Firewall</span><span>Security</span></div></div>' +
       "</article>" +
       "</div>" +
-      // BOTTOM CALL-TO-ACTION SECTION WITH CONTACT FORM TRIGGER
-      '<div class="cta-section reveal">' +
-      '<h2 class="gradient-text">Have a Custom Project Idea?</h2>' +
-      '<p class="lead" style="max-width: 600px; margin: 0.75rem auto 1.5rem auto; font-size: 1rem;">' +
+      '<div class="cta-section reveal" style="text-align:center;">' +
+      '<p class="lead" style="max-width: 600px; margin: 0 auto 1.5rem auto; font-size: 1rem;">' +
       "Need guidance choosing or customizing your final year project? Our mentors will help you refine your scope, pick the right tech stack, and structure your implementation." +
       "</p>" +
-      '<button class="consultation-btn" id="openConsultationModal">Get Free Consultation &rarr;</button>' +
+      '<a class="btn btn-primary consultation-btn" href="index.html#contact">Contact Us</a>' +
       "</div>" +
       "</div></section>" +
-      // CONTACT FORM MODAL
-      '<div class="consultation-modal-overlay" id="consultationModalOverlay">' +
-      '<div class="glass consultation-modal">' +
-      '<button class="modal-close-btn" id="closeConsultationModal">&times;</button>' +
-      '<h3 class="gradient-text" style="font-size: 1.5rem;">Request Project Consultation</h3>' +
-      '<p class="muted" style="font-size: 0.85rem; margin-top: 0.25rem;">Fill out your details below and our technical team will reach out within 24 hours.</p>' +
-      "<form class=\"consult-form\" onsubmit=\"event.preventDefault(); alert('Thank you! Our consultation team will contact you shortly.'); document.getElementById('consultationModalOverlay').classList.remove('active');\">" +
-      '<input type="text" placeholder="Your Full Name" required />' +
-      '<input type="email" placeholder="Email Address" required />' +
-      '<input type="tel" placeholder="Phone Number / WhatsApp" required />' +
-      "<select required>" +
-      '<option value="" disabled selected>Select Domain of Interest</option>' +
-      '<option value="web-mobile">Web & Mobile Development</option>' +
-      '<option value="ai-ml">AI & Machine Learning</option>' +
-      '<option value="iot-networking">IoT & Networking</option>' +
-      '<option value="custom">Custom Idea</option>' +
-      "</select>" +
-      '<textarea rows="3" placeholder="Briefly describe your project requirement or idea..." required></textarea>' +
-      '<button type="submit" class="consultation-btn" style="width: 100%; justify-content: center;">Submit Request</button>' +
-      "</form>" +
-      "</div></div>" +
       "</main>" +
       footer() +
       whatsappFloat() +
