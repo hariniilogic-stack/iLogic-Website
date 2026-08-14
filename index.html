@@ -32,17 +32,6 @@
     href="styles.css"
 >
 
-
-<!-- ========================================
-     HIDE POPUP INITIALLY
-
-     Popup remains hidden during the
-     first browser render.
-
-     This prevents flash/flicker
-     when refreshing the page.
-========================================= -->
-
 <style>
 
     #popupBanner[hidden] {
@@ -50,16 +39,10 @@
     }
 
 </style>
-```
-
 </head>
 
 <body data-page="home">
 
-```
-<!-- ========================================
-     BANNER POPUP
-========================================= -->
 
 <div
     id="popupBanner"
@@ -68,11 +51,6 @@
 >
 
     <div class="popup-content">
-
-
-        <!-- ========================================
-             CLOSE BUTTON
-        ========================================= -->
 
         <button
             type="button"
@@ -102,12 +80,6 @@
         </a>
 
 
-        <!-- ========================================
-             BANNER IMAGE
-
-             CLICK → DIRECT GMAIL COMPOSE
-        ========================================= -->
-
         <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=hr%40ilogic.com.sg&su=Resume%20Submission%20-%20Walk-in%20Interview"
             target="_blank"
@@ -130,17 +102,10 @@
 
 
 
-<!-- ========================================
-     MAIN WEBSITE
-========================================= -->
-
 <div id="app"></div>
 
 
 
-<!-- ========================================
-     SCROLL TO TOP BUTTON
-========================================= -->
 
 <button
     class="scroll-top"
@@ -176,27 +141,8 @@
 
 
 
-<!-- ========================================
-     BANNER CONTROL SCRIPT
-========================================= -->
-
 <script>
 
-    // ========================================
-    // BANNER EXPIRY
-    //
-    // Banner active until:
-    //
-    // August 1, 2026
-    // 11:59:59 PM
-    //
-    // Expired from:
-    //
-    // August 2, 2026
-    // 12:00:00 AM
-    //
-    // Browser local time is used.
-    // ========================================
 
     const expiryDate = new Date(
         2026,
@@ -209,9 +155,6 @@
     );
 
 
-    // ========================================
-    // GET POPUP ELEMENT
-    // ========================================
 
     const popup =
         document.getElementById(
@@ -219,9 +162,6 @@
         );
 
 
-    // ========================================
-    // GET CLOSE BUTTON
-    // ========================================
 
     const closeButton =
         document.getElementById(
@@ -229,26 +169,7 @@
         );
 
 
-    // ========================================
-    // CLOSE STATUS
-    //
-    // false = Popup can be shown
-    // true  = User closed popup
-    //
-    // This variable is NOT saved.
-    //
-    // Therefore:
-    //
-    // Close popup
-    //      ↓
-    // Popup stays closed
-    //
-    // Refresh page
-    //      ↓
-    // Variable resets to false
-    //      ↓
-    // Popup appears again
-    // ========================================
+
 
     let bannerClosed = false;
 

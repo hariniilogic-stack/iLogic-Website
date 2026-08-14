@@ -2212,25 +2212,479 @@ function jobsPage() {
       '</main>' + footer() + whatsappFloat() + googleFeedbackFloat() + feedbackModal() + hiringWidget() + internshipChatbotModal();
 }
 
-function projectsPage() {
-    app.innerHTML = header(false) + '<main>' +
-      '<section class="section hero" style="padding-top: 3rem;"><div class="container"><div class="hero-copy reveal is-visible" style="text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;"><span class="eyebrow" style="justify-content: center;">Final Year Projects</span><h1 class="gradient-text career-single-line" style="text-align: center;">Industry-Ready Final Year Project Ideas</h1><p class="lead" style="text-align: center;">Kickstart your portfolio or academic final year with these advanced project topics spanning Web, Mobile, AI, and Networking.</p></div></div></section>' +
-      '<section class="section section-muted"><div class="container">' + sectionHeader("Web & Mobile Applications", "Practical Web and Mobile Project Ideas", "Stand out with a fully responsive and robust application project.") + '<div class="grid-3 reveal">' +
-      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Cloud-based POS System</h3><p class="muted" style="margin-bottom: 1rem;">Design a lightweight Point of Sale application using React and Node.js. Integrate real-time inventory synchronization and a modern dashboard for daily sales tracking.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>React</span><span>Node.js</span><span>WebSockets</span></div></article>' +
-      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Dine-In Management App</h3><p class="muted" style="margin-bottom: 1rem;">A Flutter-based mobile application that allows restaurant patrons to scan QR codes, view digital menus, and place orders directly to the kitchen display system.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>Flutter</span><span>Firebase</span><span>QR Code</span></div></article>' +
-      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Academic Certification Portal</h3><p class="muted" style="margin-bottom: 1rem;">A secure portal where students can register for exams (like LanguageCert), track their progress, and download digital certificates verified via cryptography.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>Vue.js</span><span>Python</span><span>Cryptography</span></div></article>' +
-      '</div></div></section>' +
-      '<section class="section"><div class="container">' + sectionHeader("AI & Machine Learning", "Intelligent systems with predictive analytics", "Bring artificial intelligence into practical business scenarios.") + '<div class="grid-3 reveal">' +
-      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Customer Behavior Tracker</h3><p class="muted" style="margin-bottom: 1rem;">A computer vision model that analyzes retail store camera feeds to determine high-traffic zones (heatmaps) and optimize product placements.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>OpenCV</span><span>Python</span><span>TensorFlow</span></div></article>' +
-      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">POS Predictive Restocking</h3><p class="muted" style="margin-bottom: 1rem;">An AI model that predicts inventory shortages using historical sales data and seasonal trends, integrating directly with an ERP backend.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>Scikit-Learn</span><span>Pandas</span><span>API</span></div></article>' +
-      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Automated FAQ Chatbot</h3><p class="muted" style="margin-bottom: 1rem;">An NLP-driven chatbot for internship and exam enquiries, utilizing modern LLMs to provide context-aware responses and capture leads.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>NLP</span><span>OpenAI API</span><span>React</span></div></article>' +
-      '</div></div></section>' +
-      '<section class="section section-muted"><div class="container">' + sectionHeader("IoT & Networking", "Hardware integration and secure infrastructure", "Develop robust network systems connected to physical devices.") + '<div class="grid-2 reveal">' +
-      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Smart Surveillance System</h3><p class="muted" style="margin-bottom: 1rem;">An IoT solution using Raspberry Pi and camera modules to detect unauthorized access in secure zones, triggering instant alerts to an administrator portal.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>IoT</span><span>Raspberry Pi</span><span>Networking</span></div></article>' +
-      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Enterprise Network Simulation</h3><p class="muted" style="margin-bottom: 1rem;">A simulated enterprise network topology incorporating VLAN segmentation, secure routing (OSPF), and integrated firewalls, complete with performance tests.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>Cisco Packet Tracer</span><span>Routing</span><span>Firewall</span></div></article>' +
-      '</div></div></section>' +
-      '</main>' + footer() + whatsappFloat() + googleFeedbackFloat() + feedbackModal() + hiringWidget() + internshipChatbotModal();
-}
+  function projectsPage() {
+    // Inject component-specific CSS dynamically without changing color variables
+    if (!document.getElementById("projects-custom-styles")) {
+      const styleTag = document.createElement("style");
+      styleTag.id = "projects-custom-styles";
+      styleTag.innerHTML = `
+      .projects-hero {         
+        padding-top: 3.5rem;
+        padding-bottom: 2.5rem;
+      }
+      .projects-stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+      }
+      .stat-card {
+        padding: 1.5rem;
+        text-align: center;
+        border-radius: 18px;
+        backdrop-filter: blur(10px);
+      }
+      .stat-number {
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+      }
+      .stat-label {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+      .hero-badges {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+      }
+      .hero-badge {
+        padding: 0.4rem 1rem;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .project-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 1.75rem;
+        border-radius: 22px;
+        transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .project-card:hover {
+        transform: translateY(-12px) scale(1.02);
+        box-shadow: 0 20px 50px rgba(140, 80, 255, 0.18);
+        border-color: rgba(140, 80, 255, 0.4);
+      }
+      .card-icon-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+      .icon-circle {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, rgba(140, 80, 255, 0.2), rgba(255, 100, 200, 0.2));
+        border: 1px solid rgba(140, 80, 255, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .icon-circle svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+      }
+      .meta-badges {
+        display: flex;
+        gap: 0.5rem;
+      }
+      .meta-badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+        border-radius: 6px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .feature-list {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+      }
+      .feature-item {
+        font-size: 0.85rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        opacity: 0.9;
+      }
+      .feature-item svg {
+        width: 14px;
+        height: 14px;
+        fill: #2ecc71;
+        flex-shrink: 0;
+      }
+      .pill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: auto;
+        padding-top: 1rem;
+      }
+      .pill-tags span {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.75rem;
+        border-radius: 50px;
+        background: linear-gradient(135deg, rgba(140, 80, 255, 0.15), rgba(255, 255, 255, 0.05));
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        font-weight: 500;
+      }
+      .cta-section {
+        margin-top: 3rem;
+        padding: 3.5rem 2rem;
+        border-radius: 24px;
+        text-align: center;
+        background: linear-gradient(135deg, rgba(140, 80, 255, 0.15), rgba(200, 50, 150, 0.15));
+        border: 1px solid rgba(140, 80, 255, 0.3);
+      }
+      .consultation-btn {
+        margin: 0 auto;
+        padding: 0.85rem 1.75rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 12px;
+        border: 1px solid rgba(140, 80, 255, 0.5);
+        background: rgba(140, 80, 255, 0.25);
+        color: inherit;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .consultation-btn:hover {
+        background: rgba(140, 80, 255, 0.5);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(140, 80, 255, 0.3);
+      }
+
+      /* Modal Styling */
+      .consultation-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(8px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+      .consultation-modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .consultation-modal {
+        width: 90%;
+        max-width: 500px;
+        padding: 2.5rem;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      }
+      .modal-close-btn {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: inherit;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      .modal-close-btn:hover { opacity: 1; }
+      .consult-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .consult-form input, .consult-form textarea, .consult-form select {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.15);
+        background: rgba(255,255,255,0.05);
+        color: inherit;
+        font-family: inherit;
+        outline: none;
+      }
+      .consult-form input:focus, .consult-form textarea:focus, .consult-form select:focus {
+        border-color: rgba(140, 80, 255, 0.6);
+      }
+    `;
+      document.head.appendChild(styleTag);
+    }
+
+    // Common SVG checkmark for bullet points
+    const checkIcon = `<svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`;
+
+    app.innerHTML =
+      header(false) +
+      "<main>" +
+      // HERO SECTION
+      '<section class="section hero projects-hero"><div class="container">' +
+      '<div class="hero-copy reveal is-visible" style="text-align: center; max-width: 850px; margin: 0 auto;">' +
+      '<span class="eyebrow" style="justify-content: center;">Final Year Projects</span>' +
+      '<h1 class="gradient-text career-single-line" style="text-align: center;">Industry-Ready Final Year Project Ideas</h1>' +
+      '<p class="lead" style="text-align: center; margin-top: 1rem;">' +
+      "Explore innovative, industry-aligned project ideas across Web Development, Artificial Intelligence, Cloud Computing, IoT, and Mobile Technologies. Strengthen your portfolio and accelerate your technical growth." +
+      "</p>" +
+      '<div class="hero-badges">' +
+      '<span class="hero-badge">🚀 50+ Project Ideas</span>' +
+      '<span class="hero-badge">💼 Industry Ready</span>' +
+      '<span class="hero-badge">🎓 Academic Support</span>' +
+      '<span class="hero-badge">🏆 Cutting-Edge Stack</span>' +
+      "</div>" +
+      "</div>" +
+      // SECTION STATISTICS WITH ANIMATED COUNTER DATA ATTRIBUTES
+      '<div class="projects-stats-grid reveal">' +
+      '<div class="glass stat-card"><div class="stat-number gradient-text" data-counter-target="120" data-suffix="+">0</div><div class="stat-label">Curated Projects</div></div>' +
+      '<div class="glass stat-card"><div class="stat-number gradient-text" data-counter-target="15" data-suffix="+">0</div><div class="stat-label">Modern Tech Stacks</div></div>' +
+      '<div class="glass stat-card"><div class="stat-number gradient-text" data-counter-target="100" data-suffix="%">0</div><div class="stat-label">Architecture Guidance</div></div>' +
+      '<div class="glass stat-card"><div class="stat-number gradient-text" data-counter-target="24" data-suffix="/7">0</div><div class="stat-label">Mentorship Support</div></div>' +
+      "</div>" +
+      "</div></section>" +
+      // WEB & MOBILE SECTION
+      '<section class="section section-muted"><div class="container">' +
+      sectionHeader(
+        "Web & Mobile Applications",
+        "Practical Web & Mobile System Architectures",
+        "Build production-grade applications with real-time sync, cross-platform capabilities, and scalable cloud foundations."
+      ) +
+      '<div class="grid-3 reveal">' +
+      // Card 1
+      '<article class="glass project-card">' +
+      '<div><div class="card-icon-header">' +
+      '<div class="icon-circle"><svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/></svg></div>' +
+      '<div class="meta-badges"><span class="meta-badge">8 Weeks</span></div>' +
+      "</div>" +
+      "<h3>Cloud-Based POS System</h3>" +
+      '<p class="muted" style="margin-top: 0.5rem; font-size: 0.9rem;">Modern retail Point-of-Sale platform featuring inventory management, live analytics, customer billing, and offline sync support.</p>' +
+      '<ul class="feature-list">' +
+      `<li class="feature-item">${checkIcon} Real-time Inventory</li>` +
+      `<li class="feature-item">${checkIcon} Sales Dashboard</li>` +
+      `<li class="feature-item">${checkIcon} QR Code Billing</li>` +
+      `<li class="feature-item">${checkIcon} JWT Security</li>` +
+      "</ul></div>" +
+      '<div><div class="pill-tags"><span>React</span><span>Node.js</span><span>WebSockets</span><span>MongoDB</span></div></div>' +
+      "</article>" +
+      // Card 2
+      '<article class="glass project-card">' +
+      '<div><div class="card-icon-header">' +
+      '<div class="icon-circle"><svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg></div>' +
+      '<div class="meta-badges"><span class="meta-badge">6 Weeks</span></div>' +
+      "</div>" +
+      "<h3>Dine-In Restaurant App</h3>" +
+      '<p class="muted" style="margin-top: 0.5rem; font-size: 0.9rem;">Cross-platform mobile ordering ecosystem allowing patrons to scan tables, order meals, and submit items directly to kitchen displays.</p>' +
+      '<ul class="feature-list">' +
+      `<li class="feature-item">${checkIcon} QR Scanning</li>` +
+      `<li class="feature-item">${checkIcon} Live Order Matrix</li>` +
+      `<li class="feature-item">${checkIcon} Kitchen Sync</li>` +
+      `<li class="feature-item">${checkIcon} Mobile Payments</li>` +
+      "</ul></div>" +
+      '<div><div class="pill-tags"><span>Flutter</span><span>Firebase</span><span>QR Engine</span><span>REST</span></div></div>' +
+      "</article>" +
+      // Card 3
+      '<article class="glass project-card">' +
+      '<div><div class="card-icon-header">' +
+      '<div class="icon-circle"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8s0 0 0 0z"/></svg></div>' +
+      '<div class="meta-badges"><span class="meta-badge">10 Weeks</span></div>' +
+      "</div>" +
+      "<h3>Academic Certificate Portal</h3>" +
+      '<p class="muted" style="margin-top: 0.5rem; font-size: 0.9rem;">Cryptographically verified accreditation engine where students schedule exams, track performance, and issue tamper-proof digital certificates.</p>' +
+      '<ul class="feature-list">' +
+      `<li class="feature-item">${checkIcon} Cryptographic Audit</li>` +
+      `<li class="feature-item">${checkIcon} Exam Scheduling</li>` +
+      `<li class="feature-item">${checkIcon} Verification API</li>` +
+      `<li class="feature-item">${checkIcon} PDF Generation</li>` +
+      "</ul></div>" +
+      '<div><div class="pill-tags"><span>Vue.js</span><span>Python</span><span>Cryptography</span><span>FastAPI</span></div></div>' +
+      "</article>" +
+      "</div></div></section>" +
+      // AI & MACHINE LEARNING SECTION
+      '<section class="section"><div class="container">' +
+      sectionHeader(
+        "AI & Machine Learning",
+        "Intelligent Systems & Predictive Engineering",
+        "Deploy computer vision, automated natural language tools, and predictive analytics to solve complex industry problems."
+      ) +
+      '<div class="grid-3 reveal">' +
+      // Card 4
+      '<article class="glass project-card">' +
+      '<div><div class="card-icon-header">' +
+      '<div class="icon-circle"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V18h-2v-1.07A8 8 0 0 1 4.07 13H5v-2h-.93A8 8 0 0 1 11 4.07V5h2v-.93A8 8 0 0 1 19.93 11H19v2h.93A8 8 0 0 1 13 16.93z"/></svg></div>' +
+      '<div class="meta-badges"><span class="meta-badge">10 Weeks</span></div>' +
+      "</div>" +
+      "<h3>Customer Behavior Vision Tracker</h3>" +
+      '<p class="muted" style="margin-top: 0.5rem; font-size: 0.9rem;">Computer vision pipeline processing video feeds to compute foot-traffic heatmaps and optimize retail layouts dynamically.</p>' +
+      '<ul class="feature-list">' +
+      `<li class="feature-item">${checkIcon} Spatial Heatmaps</li>` +
+      `<li class="feature-item">${checkIcon} Motion Tracking</li>` +
+      `<li class="feature-item">${checkIcon} Object Detection</li>` +
+      `<li class="feature-item">${checkIcon} Frame Optimization</li>` +
+      "</ul></div>" +
+      '<div><div class="pill-tags"><span>OpenCV</span><span>Python</span><span>TensorFlow</span><span>Flask</span></div></div>' +
+      "</article>" +
+      // Card 5
+      '<article class="glass project-card">' +
+      '<div><div class="card-icon-header">' +
+      '<div class="icon-circle"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg></div>' +
+      '<div class="meta-badges"><span class="meta-badge">8 Weeks</span></div>' +
+      "</div>" +
+      "<h3>POS Predictive Restocking Engine</h3>" +
+      '<p class="muted" style="margin-top: 0.5rem; font-size: 0.9rem;">Machine learning model predicting inventory depletion dates through regression analysis of historical purchasing metrics.</p>' +
+      '<ul class="feature-list">' +
+      `<li class="feature-item">${checkIcon} Demand Forecasting</li>` +
+      `<li class="feature-item">${checkIcon} ERP Connectivity</li>` +
+      `<li class="feature-item">${checkIcon} Anomaly Alerts</li>` +
+      `<li class="feature-item">${checkIcon} Trend Analysis</li>` +
+      "</ul></div>" +
+      '<div><div class="pill-tags"><span>Scikit-Learn</span><span>Pandas</span><span>REST API</span><span>Docker</span></div></div>' +
+      "</article>" +
+      // Card 6
+      '<article class="glass project-card">' +
+      '<div><div class="card-icon-header">' +
+      '<div class="icon-circle"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg></div>' +
+      '<div class="meta-badges"><span class="meta-badge">6 Weeks</span></div>' +
+      "</div>" +
+      "<h3>Context-Aware FAQ Assistant</h3>" +
+      '<p class="muted" style="margin-top: 0.5rem; font-size: 0.9rem;">LLM-powered conversational agent handling complex inquiry workflows, lead generation, and academic assistance.</p>' +
+      '<ul class="feature-list">' +
+      `<li class="feature-item">${checkIcon} Intent Recognition</li>` +
+      `<li class="feature-item">${checkIcon} RAG Integration</li>` +
+      `<li class="feature-item">${checkIcon} Lead Analytics</li>` +
+      `<li class="feature-item">${checkIcon} Context Memory</li>` +
+      "</ul></div>" +
+      '<div><div class="pill-tags"><span>NLP</span><span>OpenAI API</span><span>React</span><span>LangChain</span></div></div>' +
+      "</article>" +
+      "</div></div></section>" +
+      // IOT & NETWORKING SECTION
+      '<section class="section section-muted"><div class="container">' +
+      sectionHeader(
+        "IoT & Infrastructure Engineering",
+        "Embedded Systems & Enterprise Networking",
+        "Hardware-to-software orchestration utilizing secure edge nodes, active sensors, and segmented network topologies."
+      ) +
+      '<div class="grid-2 reveal">' +
+      // Card 7
+      '<article class="glass project-card">' +
+      '<div><div class="card-icon-header">' +
+      '<div class="icon-circle"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div>' +
+      '<div class="meta-badges"><span class="meta-badge">12 Weeks</span></div>' +
+      "</div>" +
+      "<h3>Smart IoT Surveillance Matrix</h3>" +
+      '<p class="muted" style="margin-top: 0.5rem; font-size: 0.9rem;">Edge surveillance node leveraging Raspberry Pi modules to process visual streams, flag breaches, and notify admin interfaces.</p>' +
+      '<ul class="feature-list">' +
+      `<li class="feature-item">${checkIcon} Edge Processing</li>` +
+      `<li class="feature-item">${checkIcon} Real-time Alerts</li>` +
+      `<li class="feature-item">${checkIcon} Remote Dashboard</li>` +
+      `<li class="feature-item">${checkIcon} Hardware Encryption</li>` +
+      "</ul></div>" +
+      '<div><div class="pill-tags"><span>IoT</span><span>Raspberry Pi</span><span>MQTT</span><span>Python</span></div></div>' +
+      "</article>" +
+      // Card 8
+      '<article class="glass project-card">' +
+      '<div><div class="card-icon-header">' +
+      '<div class="icon-circle"><svg viewBox="0 0 24 24"><path d="M4 1h16c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2zm0 7h16c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-4c0-1.1.9-2 2-2zm0 7h16c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-4c0-1.1.9-2 2-2z"/></svg></div>' +
+      '<div class="meta-badges"><span class="meta-badge">8 Weeks</span></div>' +
+      "</div>" +
+      "<h3>Enterprise Network Topology</h3>" +
+      '<p class="muted" style="margin-top: 0.5rem; font-size: 0.9rem;">Simulated enterprise topology featuring multi-VLAN isolation, dynamic OSPF routing, integrated firewalls, and stress reporting.</p>' +
+      '<ul class="feature-list">' +
+      `<li class="feature-item">${checkIcon} VLAN Segmentation</li>` +
+      `<li class="feature-item">${checkIcon} OSPF Routing</li>` +
+      `<li class="feature-item">${checkIcon} Firewall Rules</li>` +
+      `<li class="feature-item">${checkIcon} Traffic Analysis</li>` +
+      "</ul></div>" +
+      '<div><div class="pill-tags"><span>Cisco Packet Tracer</span><span>Routing</span><span>Firewall</span><span>Security</span></div></div>' +
+      "</article>" +
+      "</div>" +
+      '<div class="cta-section reveal" style="text-align:center;">' +
+      '<p class="lead" style="max-width: 600px; margin: 0 auto 1.5rem auto; font-size: 1rem;">' +
+      "Need guidance choosing or customizing your final year project? Our mentors will help you refine your scope, pick the right tech stack, and structure your implementation." +
+      "</p>" +
+      '<a class="btn btn-primary consultation-btn" href="index.html#contact">Contact Us</a>' +
+      "</div>" +
+      "</div></section>" +
+      "</main>" +
+      footer() +
+      whatsappFloat() +
+      googleFeedbackFloat() +
+      feedbackModal() +
+      hiringWidget() +
+      internshipChatbotModal();
+
+    // 1. STATS COUNTER ANIMATION FUNCTION
+    setTimeout(() => {
+      const counters = document.querySelectorAll("[data-counter-target]");
+      counters.forEach((counter) => {
+        const target = parseInt(
+          counter.getAttribute("data-counter-target"),
+          10
+        );
+        const suffix = counter.getAttribute("data-suffix") || "";
+        let count = 0;
+        const speed = target / 30; // Smooth 30-frame step animation
+
+        const updateCount = () => {
+          count += speed;
+          if (count < target) {
+            counter.innerText = Math.ceil(count) + suffix;
+            requestAnimationFrame(updateCount);
+          } else {
+            counter.innerText = target + suffix;
+          }
+        };
+        updateCount();
+      });
+
+      // 2. MODAL TOGGLE HANDLERS
+      const openBtn = document.getElementById("openConsultationModal");
+      const closeBtn = document.getElementById("closeConsultationModal");
+      const modalOverlay = document.getElementById("consultationModalOverlay");
+
+      if (openBtn && modalOverlay) {
+        openBtn.addEventListener("click", () =>
+          modalOverlay.classList.add("active")
+        );
+      }
+      if (closeBtn && modalOverlay) {
+        closeBtn.addEventListener("click", () =>
+          modalOverlay.classList.remove("active")
+        );
+      }
+      if (modalOverlay) {
+        modalOverlay.addEventListener("click", (e) => {
+          if (e.target === modalOverlay)
+            modalOverlay.classList.remove("active");
+        });
+      }
+    }, 50);
+  }
   if (page === "home") {
     homePage();
     refineHomeHero();
