@@ -211,6 +211,23 @@ button {
   margin-right: auto
 }
 
+<<<<<<< HEAD
+=======
+#partners .section-heading .lead {
+  margin: 0.4rem auto 0.9rem;
+}
+
+#partners .portfolio-summary {
+  max-width: 46rem;
+  margin: 0 auto 1.2rem;
+  text-align: center;
+}
+
+#partners .portfolio-summary .lead {
+  margin: 0;
+}
+
+>>>>>>> origin/Yacoob
 .site-header {
   position: fixed;
   top: 0;
@@ -1511,6 +1528,17 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+<<<<<<< HEAD
+=======
+#reviews .grid-3 {
+  align-items: start;
+}
+
+#reviews .grid-3 .glass.card {
+  align-self: start;
+}
+
+>>>>>>> origin/Yacoob
 #about .split-grid {
   align-items: start;
   grid-template-columns: 1fr !important;
@@ -2027,6 +2055,39 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   gap: 1rem
 }
 
+<<<<<<< HEAD
+=======
+.review-header {
+  flex-wrap: wrap;
+}
+
+.review-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.review-company,
+.stars,
+.review-message {
+  display: none;
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
+.glass.card {
+  cursor: pointer;
+}
+
+.glass.card.active .review-company,
+.glass.card.active .stars,
+.glass.card.active .review-message {
+  display: block;
+  opacity: 1;
+}
+
+
+>>>>>>> origin/Yacoob
 #contact .contact-item {
   align-items: center;
   gap: .85rem
@@ -2101,6 +2162,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   padding: .8rem 1.2rem
 }
 
+<<<<<<< HEAD
 .contact-form-status {
   min-height: 1.2rem;
   font-size: .92rem;
@@ -2278,6 +2340,8 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   stroke-linejoin: round;
 }
 
+=======
+>>>>>>> origin/Yacoob
 .list {
   display: grid;
   gap: 1.1rem;
@@ -2342,7 +2406,11 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
 }
 
 .marquee {
+<<<<<<< HEAD
   overflow: hidden;
+=======
+  overflow: visible;
+>>>>>>> origin/Yacoob
   margin-bottom: 1.85rem
 }
 
@@ -2371,6 +2439,29 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   -webkit-backdrop-filter: none
 }
 
+<<<<<<< HEAD
+=======
+.logo-card.center-logo {
+  position: relative;
+  z-index: 2;
+  animation: center-logo 10s ease-in-out infinite;
+}
+
+@keyframes center-logo {
+  0%, 20%, 100% {
+    transform: translateY(0) scale(1);
+  }
+
+  35%, 45% {
+    transform: translateY(0) scale(1.4);
+  }
+
+  60% {
+    transform: translateY(1.8rem) scale(1);
+  }
+}
+
+>>>>>>> origin/Yacoob
 .logo-card img {
   max-height: 100%;
   max-width: 100%;

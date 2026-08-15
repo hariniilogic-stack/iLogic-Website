@@ -993,42 +993,62 @@
     title: "Singapore",
     address: "10 Ubi Crescent #05-41 (Unit A), Ubi TechPark, Lobby C, Singapore - 408564",
     phone: "+65 9017 5062, +65 8177 5062",
+<<<<<<< HEAD
     map: "https://www.google.com/maps/search/?api=1&query=10+Ubi+Crescent+%2305-41+Unit+A%2C+Ubi+TechPark%2C+Lobby+C%2C+Singapore+408564",
     tz: "Asia/Singapore",
     whatsapp: "6590175062",
     flag: "🇸🇬"
+=======
+    map: "https://www.google.com/maps/search/?api=1&query=10+Ubi+Crescent+%2305-41+Unit+A%2C+Ubi+TechPark%2C+Lobby+C%2C+Singapore+408564"
+>>>>>>> origin/Yacoob
   }, {
     title: "India (Madurai)",
     address: "93/3 Pattukottai Sundara Street, Arul Nagar, Bypass Road, Opp PRC, Madurai - 625016",
     phone: "+91 72000 05541, +65 8177 5062",
+<<<<<<< HEAD
     map: "https://www.google.com/maps/place/iLOGIC+TECH,+Madurai/@9.9139841,78.0945502,17z/data=!3m1!4b1!4m6!3m5!1s0x3b00cf002c400a23:0x84be009f3dfe1f5f!8m2!3d9.9139841!4d78.0971251!16s%2Fg%2F11yqbyskc8?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D",
     tz: "Asia/Kolkata",
     whatsapp: "917200005541",
     flag: "🇮🇳"
+=======
+    map: "https://www.google.com/maps/place/iLOGIC+TECH,+Madurai/@9.9139841,78.0945502,17z/data=!3m1!4b1!4m6!3m5!1s0x3b00cf002c400a23:0x84be009f3dfe1f5f!8m2!3d9.9139841!4d78.0971251!16s%2Fg%2F11yqbyskc8?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D"
+>>>>>>> origin/Yacoob
   }, {
     title: "India (Pondicherry)",
     address: "15(3), Ignacy Maistry Street, MG Road Area, Pondicherry - 605001",
     phone: "+91 91766 09303",
+<<<<<<< HEAD
     map: "https://www.google.com/maps/place/iLogic+Tech,+Puducherry/@11.9290166,79.8247117,17z/data=!3m1!4b1!4m15!1m8!3m7!1s0x3a536180e4aaea81:0x77def1b76c661b67!2s15,+Ignace+Mestry+St,+Chinnakadai,+MG+Road+Area,+Puducherry,+605001!3b1!8m2!3d11.9290166!4d79.8272866!16s%2Fg%2F11jkwdn1g8!3m5!1s0x3a53610021c0e9b7:0x6550dd8bf2e92fc1!8m2!3d11.9290166!4d79.8272866!16s%2Fg%2F11n4fkjhl6?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D",
     tz: "Asia/Kolkata",
     whatsapp: "917200005541",
     flag: "🇮🇳"
+=======
+    map: "https://www.google.com/maps/place/iLogic+Tech,+Puducherry/@11.9290166,79.8247117,17z/data=!3m1!4b1!4m15!1m8!3m7!1s0x3a536180e4aaea81:0x77def1b76c661b67!2s15,+Ignace+Mestry+St,+Chinnakadai,+MG+Road+Area,+Puducherry,+605001!3b1!8m2!3d11.9290166!4d79.8272866!16s%2Fg%2F11jkwdn1g8!3m5!1s0x3a53610021c0e9b7:0x6550dd8bf2e92fc1!8m2!3d11.9290166!4d79.8272866!16s%2Fg%2F11n4fkjhl6?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D"
+>>>>>>> origin/Yacoob
   }, {
     title: "Kuwait",
     address: "Office No. 39, Wala Complex, Hawalli, Kuwait",
     phone: "+965 66598721",
+<<<<<<< HEAD
     map: "https://www.google.com/maps/search/?api=1&query=Office+No.+39%2C+Wala+Complex%2C+Hawalli%2C+Kuwait",
     tz: "Asia/Kuwait",
     whatsapp: "6590175062",
     flag: "🇰🇼"
+=======
+    map: "https://www.google.com/maps/search/?api=1&query=Office+No.+39%2C+Wala+Complex%2C+Hawalli%2C+Kuwait"
+>>>>>>> origin/Yacoob
   }, {
     title: "Ireland",
     address: "15, Orwell Woods, Datry Rathgar, Dublin - 6, Ireland",
     phone: "+353 877057694",
+<<<<<<< HEAD
     map: "https://www.google.com/maps/search/?api=1&query=15+Orwell+Woods%2C+Datry+Rathgar%2C+Dublin+6%2C+Ireland",
     tz: "Europe/Dublin",
     whatsapp: "6590175062",
     flag: "🇮🇪"
+=======
+    map: "https://www.google.com/maps/search/?api=1&query=15+Orwell+Woods%2C+Datry+Rathgar%2C+Dublin+6%2C+Ireland"
+>>>>>>> origin/Yacoob
   }];
   const galleryCollections = [{
     key: "placements",
@@ -1646,8 +1666,12 @@
 
   function testimonialCardMarkup(item) {
     return '<article class="glass card reveal is-visible">' +
+<<<<<<< HEAD
       '<div class="review-header"><div class="avatar-badge">' + avatarInitials(item.name) + '</div><div><h3 style="margin:0;">' + escapeHtml(item.name) + '</h3><p class="muted" style="margin:0.2rem 0 0;">' + escapeHtml(item.company) + ' | ' + escapeHtml(item.role) + '</p></div></div>' +
       '<p class="stars">' + Array((item.rating || 0) + 1).join("★") + '</p><p class="muted">' + escapeHtml(item.message) + '</p></article>';
+=======
+      '<div class="review-header"><div class="avatar-badge">' + avatarInitials(item.name) + '</div><div class="review-toggle"><h3 class="review-name" style="margin:0; cursor:pointer;">' + escapeHtml(item.name) + '</h3><p class="review-company muted" style="margin:0.2rem 0 0;">' + escapeHtml(item.company) + ' | ' + escapeHtml(item.role) + '</p><p class="stars">' + Array((item.rating || 0) + 1).join("★") + '</p><p class="review-message muted" style="margin:0.75rem 0 0;">' + escapeHtml(item.message) + '</p></div></div></article>';
+>>>>>>> origin/Yacoob
   }
 
   function feedbackModal() {
@@ -1760,11 +1784,15 @@
       location: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19a6.5 6.5 0 0 1 13 0"/></svg>',
       phone: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 5.8h2.4l1.2 3.1-1.5 1.6a13.7 13.7 0 0 0 3.9 3.9l1.6-1.5 3.1 1.2v2.4c0 .7-.5 1.2-1.2 1.2A11.7 11.7 0 0 1 6.3 7c0-.7.5-1.2 1.2-1.2Z"/></svg>',
       email: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="m5 8 7 5 7-5"/></svg>',
+<<<<<<< HEAD
       web: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4a13 13 0 0 1 0 16M12 4a13 13 0 0 0 0 16"/></svg>',
       hours: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.2"/><path d="M12 7.5V12l3.2 2"/></svg>',
       copy: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="10.5" height="10.5" rx="2"/><path d="M15 8.5V6.5A2 2 0 0 0 13 4.5H6.5a2 2 0 0 0-2 2V13a2 2 0 0 0 2 2H8.5"/></svg>',
       vcard: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><circle cx="9" cy="11" r="1.8"/><path d="M6 16.2c.5-1.6 1.7-2.4 3-2.4s2.5.8 3 2.4"/><path d="M14.2 10h4M14.2 13h4"/></svg>',
       whatsapp: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 17.4 5 19l1.65-.44A7.9 7.9 0 1 0 4.1 12a7.9 7.9 0 0 0 1.15 4.1Z"/><path d="M9 9.6c0-.5.4-1 .9-1h.6c.3 0 .6.2.7.5l.6 1.5c.1.3 0 .6-.2.8l-.6.6a5.6 5.6 0 0 0 2.5 2.5l.6-.6c.2-.2.5-.3.8-.2l1.5.6c.3.1.5.4.5.7v.6c0 .5-.5.9-1 .9-3.5 0-6.9-3.4-6.9-6.9Z"/></svg>'
+=======
+      web: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4a13 13 0 0 1 0 16M12 4a13 13 0 0 0 0 16"/></svg>'
+>>>>>>> origin/Yacoob
     };
     return icons[type] || icons.phone;
   }
@@ -1796,6 +1824,7 @@
       '</div></section>';
   }
 
+<<<<<<< HEAD
   function officeStatusMarkup() {
     return '<ul class="office-status-list" id="officeStatusList">' + branches.map(function(item) {
       return '<li class="office-status-row" data-office-tz="' + item.tz + '" data-office-title="' + item.title + '"><span class="office-status-flag" aria-hidden="true">' + item.flag + '</span><span class="office-status-name">' + item.title + '</span><span class="office-status-dot" data-office-dot></span><span class="office-status-text muted" data-office-text>Checking…</span></li>';
@@ -1841,6 +1870,10 @@
         '</form>' +
       '</div>' +
       '</div></div></section>';
+=======
+  function contactSection() {
+    return '<section class="section" id="contact"><div class="container">' + sectionHeader("Contact Us", "Get In Touch", "Ready to transform your business with cutting-edge technology? Let us talk about how we can help.") + '<div class="contact-grid"><div class="contact-stack"><div class="glass card reveal"><div class="contact-item"><div class="contact-icon" aria-hidden="true">' + contactIcon("location") + '</div><div><strong>Contact Details</strong></div></div></div><div class="glass card reveal"><div class="contact-item"><div class="contact-icon" aria-hidden="true">' + contactIcon("phone") + '</div><div><strong>Phone</strong><p class="muted">+65 90175062 / +91 72000 05541</p></div></div></div><div class="glass card reveal"><div class="contact-item"><div class="contact-icon" aria-hidden="true">' + contactIcon("email") + '</div><div><strong>Email</strong><p class="muted">info@ilogic.com.sg<br>hr@ilogic.com.sg</p></div></div></div><div class="glass card reveal"><div class="contact-item"><div class="contact-icon" aria-hidden="true">' + contactIcon("web") + '</div><div><strong>Website</strong><p class="muted">www.ilogic.com.sg</p></div></div></div></div><div class="glass card reveal"><form class="contact-form" id="contactForm"><h3 class="gradient-text" style="font-family:Space Grotesk, sans-serif; margin:0;">Send us a message</h3><div class="form-grid"><label>Full Name<input name="name" required /></label><label>Email<input type="email" name="email" required /></label></div><div class="form-grid"><label>Phone<input name="phone" required /></label><label>Subject<input name="subject" value="New enquiry" required /></label></div><label>Message<textarea name="message" required></textarea></label><button class="btn btn-primary" type="submit">Send Message</button></form></div></div></div></section>';
+>>>>>>> origin/Yacoob
   }
 
   function resolveSolutionStats(stats, slug) {
@@ -1948,7 +1981,11 @@
       ["IT Infrastructure", "Networking, CCTV, and cybersecurity services."],
       ["Training Programs", "Internships, certifications"],
       ["LanguageCert Partner", "Official LanguageCert examination support."]
+<<<<<<< HEAD
     ].map(item => '<article class="glass card"><div class="icon-badge">' + aboutIcon(item[0]) + '</div><h3>' + item[0] + '</h3><p class="muted">' + item[1] + '</p></article>').join("") + '</div></div></div></section>' + '<section class="section" id="products" data-country-display="SG"><div class="container">' + sectionHeader("Our Products", "Product Lineup", "") + '<div class="grid-4">' + products.map(item => '<article class="glass card reveal"><div class="product-media"><img src="' + item[2] + '" alt="' + item[1] + '" /></div><div class="product-card-body"><h3>' + item[1] + '</h3><p class="muted card-summary">' + item[3] + '</p><div class="card-details"><div class="tag-list">' + item[4].map(feature => '<span>' + feature + '</span>').join("") + '</div>' + (item[5] ? '<p class="muted card-description">' + item[5] + '</p>' : '') + '<a class="btn btn-secondary" href="project.html?slug=' + item[0] + '">View More Details</a></div></div></article>').join("") + '</div></div></section>' + '<section class="section section-muted" id="services" data-country-display="SG"><div class="container">' + sectionHeader("Our Services", "Comprehensive Services", "Technology solutions tailored to your industry needs.") + '<div class="grid-3">' + services.map(item => '<article class="glass card reveal service-card"><div class="icon-badge service-icon-badge">' + serviceIcon(item[0]) + '</div><h3>' + item[1] + '</h3><p class="muted">' + item[2] + '</p><ul class="service-points">' + item[3].map(feature => '<li>' + feature + '</li>').join("") + '</ul><a class="btn btn-secondary" href="' + serviceCardHref(item[0]) + '">View More Details</a></article>').join("") + '</div></div></section>' + '<section class="section" id="solutions" data-country-display="SG"><div class="container">' + sectionHeader("Our Solutions", "Business Applications", "Explore our innovative applications and industry-focused software.") + '<div class="grid-4">' + solutions.map(item => '<article class="glass card reveal solution-card"><div class="solution-media"><img src="' + item[5] + '" alt="' + item[1] + '" loading="lazy" /></div><div class="solution-title"><div class="solution-title-pane"><h3>' + item[1] + '</h3></div></div><div class="solution-overlay"><div class="solution-overlay-pane"><h3>' + item[1] + '</h3><p class="muted">' + item[2] + '</p><div class="tag-list">' + item[3].map(feature => '<span>' + feature + '</span>').join("") + '</div><a class="btn btn-secondary" href="solution.html?slug=' + item[0] + '">View Project</a></div></div></article>').join("") + '</div></div></section>' + '<section class="section section-muted" id="clients" data-country-display="SG"><div class="container">' + sectionHeader("Our Clients", "Trusted by Leading Brands", "Proud to partner with businesses across the globe.") + [clientLogos.slice(0, 7), clientLogos.slice(7, 13), clientLogos.slice(13)].map((row, idx) => '<div class="marquee ' + (idx === 1 ? 'reverse' : '') + '"><div class="marquee-track">' + row.concat(row, row).map(path => '<div class="logo-card glass"><img src="' + path + '" alt="Client logo" /></div>').join("") + '</div></div>').join("") + '</div></section>' + '<section class="section" id="partners" data-country-display="SG"><div class="container">' + sectionHeader("Our Partners", "Strategic Partners", "Collaborating with industry leaders to deliver world-class solutions.") + '<div class="partner-grid">' + partners.map(item => '<div class="glass card reveal logo-card"><img src="' + item + '" alt="Partner logo" /></div>').join("") + '</div></div></section>' + '<section class="section section-muted" id="team" data-country-display="IN"><div class="container">' + sectionHeader("Leadership", "Our Leadership", "Visionary leaders driving innovation and excellence.") + '<div class="grid-2" style="max-width:38rem;margin:0 auto;">' + team.map(item => '<article class="glass card reveal team-card"><div class="team-photo"><img src="' + item.image + '" alt="' + item.name + '" /></div><p class="team-role">' + item.role + '</p><h3 class="team-signature">' + item.name + '</h3><p class="muted team-title">' + item.title + '</p></article>').join("") + '</div></div></section>' + '<section class="section" id="gallery" data-country-display="IN"><div class="container">' + sectionHeader("Moments", "Life at iLogic Tech", "A glimpse into our workspace, events, and achievements.") + '<div class="gallery-folder-grid">' + galleryCards(galleryCollections) + '</div></div></section>' + '<section class="section section-muted" id="reviews"><div class="container">' + sectionHeader("Testimonials", "What Our Clients Say", "Top reviews from businesses we have supported.") + '<div class="grid-3" id="testimonialsGrid">' + defaultTestimonials.map(testimonialCardMarkup).join("") + '</div></div></section>' + branchSection() + contactSection() + '</main>' + footer() + whatsappFloat() + googleFeedbackFloat() + walkInPosterModal() + feedbackModal() + galleryModal() + hiringWidget() + internshipChatbotModal() + examNotification();
+=======
+    ].map(item => '<article class="glass card"><div class="icon-badge">' + aboutIcon(item[0]) + '</div><h3>' + item[0] + '</h3><p class="muted">' + item[1] + '</p></article>').join("") + '</div></div></div></section>' + '<section class="section" id="products" data-country-display="SG"><div class="container">' + sectionHeader("Our Products", "Product Lineup", "") + '<div class="grid-4">' + products.map(item => '<article class="glass card reveal"><div class="product-media"><img src="' + item[2] + '" alt="' + item[1] + '" /></div><div class="product-card-body"><h3>' + item[1] + '</h3><p class="muted card-summary">' + item[3] + '</p><div class="card-details"><div class="tag-list">' + item[4].map(feature => '<span>' + feature + '</span>').join("") + '</div>' + (item[5] ? '<p class="muted card-description">' + item[5] + '</p>' : '') + '<a class="btn btn-secondary" href="project.html?slug=' + item[0] + '">View More Details</a></div></div></article>').join("") + '</div></div></section>' + '<section class="section section-muted" id="services" data-country-display="SG"><div class="container">' + sectionHeader("Our Services", "Comprehensive Services", "Technology solutions tailored to your industry needs.") + '<div class="grid-3">' + services.map(item => '<article class="glass card reveal service-card"><div class="icon-badge service-icon-badge">' + serviceIcon(item[0]) + '</div><h3>' + item[1] + '</h3><p class="muted">' + item[2] + '</p><ul class="service-points">' + item[3].map(feature => '<li>' + feature + '</li>').join("") + '</ul><a class="btn btn-secondary" href="' + serviceCardHref(item[0]) + '">View More Details</a></article>').join("") + '</div></div></section>' + '<section class="section" id="solutions" data-country-display="SG"><div class="container">' + sectionHeader("Our Solutions", "Business Applications", "Explore our innovative applications and industry-focused software.") + '<div class="grid-4">' + solutions.map(item => '<article class="glass card reveal solution-card"><div class="solution-media"><img src="' + item[5] + '" alt="' + item[1] + '" loading="lazy" /></div><div class="solution-title"><div class="solution-title-pane"><h3>' + item[1] + '</h3></div></div><div class="solution-overlay"><div class="solution-overlay-pane"><h3>' + item[1] + '</h3><p class="muted">' + item[2] + '</p><div class="tag-list">' + item[3].map(feature => '<span>' + feature + '</span>').join("") + '</div><a class="btn btn-secondary" href="solution.html?slug=' + item[0] + '">View Project</a></div></div></article>').join("") + '</div></div></section>' + '<section class="section section-muted" id="clients" data-country-display="SG"><div class="container">' + sectionHeader("Our Clients", "Trusted by Leading Brands", "Proud to partner with businesses across the globe.") + [clientLogos.slice(0, 7), clientLogos.slice(7, 13), clientLogos.slice(13)].map((row, idx) => '<div class="marquee ' + (idx % 2 === 0 ? 'reverse' : '') + '"><div class="marquee-track">' + row.concat(row, row).map((path, logoIndex) => '<div class="logo-card glass' + ((logoIndex % row.length) === Math.floor(row.length / 2) ? ' center-logo' : '') + '"><img src="' + path + '" alt="Client logo" /></div>').join("") + '</div></div>').join("") + '</div></section>' +'<section class="section" id="partners" data-country-display="SG"><div class="container">' + sectionHeader("Our Partners", "Strategic Partners", "Collaborating with industry leaders to deliver world-class solutions.") + '<div class="portfolio-summary reveal"><p class="lead">Our partner network supports certification, infrastructure, training, and delivery across regions.</p></div>' + '<div class="marquee"><div class="marquee-track">' + partners.concat(partners, partners).map(item => '<div class="logo-card glass"><img src="' + item + '" alt="Partner logo" loading="lazy" /></div>').join("") + '</div></div>' + '<div class="portfolio-links reveal"><a class="btn btn-primary" href="#gallery">View Gallery</a><a class="btn btn-secondary" href="#reviews">Read Reviews</a></div>' + '</div></section>' + '<section class="section section-muted" id="team" data-country-display="IN"><div class="container">' + sectionHeader("Leadership", "Our Leadership", "Visionary leaders driving innovation and excellence.") + + '<div class="grid-2" style="max-width:38rem;margin:0 auto;">' + team.map(item => '<article class="glass card reveal team-card"><div class="team-photo"><img src="' + item.image + '" alt="' + item.name + '" /></div><p class="team-role">' + item.role + '</p><h3 class="team-signature">' + item.name + '</h3><p class="muted team-title">' + item.title + '</p></article>').join("") + '</div></div></section>' + '<section class="section" id="gallery" data-country-display="SG,IN"><div class="container">' + sectionHeader("Corporate Gallery", "Company Spaces & Partner Events", "Explore our workplaces, training venues, and client collaboration locations across Singapore, India, and our partner sites.") + '<div class="portfolio-summary reveal"><p class="lead">Our gallery highlights company spaces, training locations, and engagement events, showcasing how iLogic Tech connects people, partners, and customers at every stage of our work.</p></div>' + '<div class="gallery-folder-grid">' + galleryCards(galleryCollections) + '</div></div></section>' + '<section class="section section-muted" id="reviews"><div class="container">' + sectionHeader("Testimonials", "What Our Clients Say", "Top reviews from businesses we have supported.") + '<div class="grid-3" id="testimonialsGrid">' + defaultTestimonials.map(testimonialCardMarkup).join("") + '</div></div></section>' + branchSection() + contactSection() + '</main>' + footer() + whatsappFloat() + googleFeedbackFloat() + walkInPosterModal() + feedbackModal() + galleryModal() + hiringWidget() + internshipChatbotModal() + examNotification();
+>>>>>>> origin/Yacoob
   }
 
   function refineHomeHero() {
@@ -2212,6 +2249,7 @@ function jobsPage() {
       '</main>' + footer() + whatsappFloat() + googleFeedbackFloat() + feedbackModal() + hiringWidget() + internshipChatbotModal();
 }
 
+<<<<<<< HEAD
   function projectsPage() {
     // Inject component-specific CSS dynamically without changing color variables
     if (!document.getElementById("projects-custom-styles")) {
@@ -2685,6 +2723,27 @@ function jobsPage() {
       }
     }, 50);
   }
+=======
+function projectsPage() {
+    app.innerHTML = header(false) + '<main>' +
+      '<section class="section hero" style="padding-top: 3rem;"><div class="container"><div class="hero-copy reveal is-visible" style="text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;"><span class="eyebrow" style="justify-content: center;">Final Year Projects</span><h1 class="gradient-text career-single-line" style="text-align: center;">Industry-Ready Final Year Project Ideas</h1><p class="lead" style="text-align: center;">Kickstart your portfolio or academic final year with these advanced project topics spanning Web, Mobile, AI, and Networking.</p></div></div></section>' +
+      '<section class="section section-muted"><div class="container">' + sectionHeader("Web & Mobile Applications", "Practical Web and Mobile Project Ideas", "Stand out with a fully responsive and robust application project.") + '<div class="grid-3 reveal">' +
+      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Cloud-based POS System</h3><p class="muted" style="margin-bottom: 1rem;">Design a lightweight Point of Sale application using React and Node.js. Integrate real-time inventory synchronization and a modern dashboard for daily sales tracking.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>React</span><span>Node.js</span><span>WebSockets</span></div></article>' +
+      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Dine-In Management App</h3><p class="muted" style="margin-bottom: 1rem;">A Flutter-based mobile application that allows restaurant patrons to scan QR codes, view digital menus, and place orders directly to the kitchen display system.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>Flutter</span><span>Firebase</span><span>QR Code</span></div></article>' +
+      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Academic Certification Portal</h3><p class="muted" style="margin-bottom: 1rem;">A secure portal where students can register for exams (like LanguageCert), track their progress, and download digital certificates verified via cryptography.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>Vue.js</span><span>Python</span><span>Cryptography</span></div></article>' +
+      '</div></div></section>' +
+      '<section class="section"><div class="container">' + sectionHeader("AI & Machine Learning", "Intelligent systems with predictive analytics", "Bring artificial intelligence into practical business scenarios.") + '<div class="grid-3 reveal">' +
+      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Customer Behavior Tracker</h3><p class="muted" style="margin-bottom: 1rem;">A computer vision model that analyzes retail store camera feeds to determine high-traffic zones (heatmaps) and optimize product placements.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>OpenCV</span><span>Python</span><span>TensorFlow</span></div></article>' +
+      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">POS Predictive Restocking</h3><p class="muted" style="margin-bottom: 1rem;">An AI model that predicts inventory shortages using historical sales data and seasonal trends, integrating directly with an ERP backend.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>Scikit-Learn</span><span>Pandas</span><span>API</span></div></article>' +
+      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Automated FAQ Chatbot</h3><p class="muted" style="margin-bottom: 1rem;">An NLP-driven chatbot for internship and exam enquiries, utilizing modern LLMs to provide context-aware responses and capture leads.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>NLP</span><span>OpenAI API</span><span>React</span></div></article>' +
+      '</div></div></section>' +
+      '<section class="section section-muted"><div class="container">' + sectionHeader("IoT & Networking", "Hardware integration and secure infrastructure", "Develop robust network systems connected to physical devices.") + '<div class="grid-2 reveal">' +
+      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Smart Surveillance System</h3><p class="muted" style="margin-bottom: 1rem;">An IoT solution using Raspberry Pi and camera modules to detect unauthorized access in secure zones, triggering instant alerts to an administrator portal.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>IoT</span><span>Raspberry Pi</span><span>Networking</span></div></article>' +
+      '<article class="glass card" style="display: flex; flex-direction: column; height: 100%;"><h3 style="margin-bottom: 0.75rem;">Enterprise Network Simulation</h3><p class="muted" style="margin-bottom: 1rem;">A simulated enterprise network topology incorporating VLAN segmentation, secure routing (OSPF), and integrated firewalls, complete with performance tests.</p><div class="tag-list" style="margin-bottom: 0; gap: 0.65rem;"><span>Cisco Packet Tracer</span><span>Routing</span><span>Firewall</span></div></article>' +
+      '</div></div></section>' +
+      '</main>' + footer() + whatsappFloat() + googleFeedbackFloat() + feedbackModal() + hiringWidget() + internshipChatbotModal();
+}
+>>>>>>> origin/Yacoob
   if (page === "home") {
     homePage();
     refineHomeHero();
@@ -2962,6 +3021,7 @@ function jobsPage() {
       });
     });
   }
+<<<<<<< HEAD
   const contactSectionEl = document.getElementById("contact");
   if (contactSectionEl) {
     const form = document.getElementById("contactForm");
@@ -3247,6 +3307,16 @@ function jobsPage() {
     window.setInterval(runSmartRouting, 60000);
     checkForSavedDraft();
     updateWhatsappBridge();
+=======
+  const form = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const data = new FormData(form);
+      const body = ["Name: " + data.get("name"), "Email: " + data.get("email"), "Phone: " + data.get("phone"), "", data.get("message")].join("\n");
+      window.location.href = "mailto:info@ilogic.com.sg?subject=" + encodeURIComponent(String(data.get("subject"))) + "&body=" + encodeURIComponent(body);
+    });
+>>>>>>> origin/Yacoob
   }
 
   // Add click handler for tailor image
@@ -3797,6 +3867,23 @@ function jobsPage() {
     };
     migrateFeedbackStorage();
     renderTestimonials();
+<<<<<<< HEAD
+=======
+    if (testimonialsGrid) {
+      testimonialsGrid.addEventListener("click", function(event) {
+        const clickedCard = event.target.closest("article.glass.card");
+        if (!clickedCard || !testimonialsGrid.contains(clickedCard)) return;
+        const currentlyActive = testimonialsGrid.querySelector("article.glass.card.active");
+        const isSameCard = currentlyActive === clickedCard;
+        testimonialsGrid.querySelectorAll("article.glass.card.active").forEach(activeCard => {
+          activeCard.classList.remove("active");
+        });
+        if (!isSameCard) {
+          clickedCard.classList.add("active");
+        }
+      });
+    }
+>>>>>>> origin/Yacoob
     resetFeedbackForm();
     if (googleFeedbackOpen) {
       googleFeedbackOpen.addEventListener("click", openFeedbackModal);

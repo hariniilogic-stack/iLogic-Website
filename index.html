@@ -32,6 +32,20 @@
     href="styles.css"
 >
 
+<<<<<<< HEAD
+=======
+
+<!-- ========================================
+     HIDE POPUP INITIALLY
+
+     Popup remains hidden during the
+     first browser render.
+
+     This prevents flash/flicker
+     when refreshing the page.
+========================================= -->
+
+>>>>>>> origin/Yacoob
 <style>
 
     #popupBanner[hidden] {
@@ -39,10 +53,22 @@
     }
 
 </style>
+<<<<<<< HEAD
+=======
+```
+
+>>>>>>> origin/Yacoob
 </head>
 
 <body data-page="home">
 
+<<<<<<< HEAD
+=======
+```
+<!-- ========================================
+     BANNER POPUP
+========================================= -->
+>>>>>>> origin/Yacoob
 
 <div
     id="popupBanner"
@@ -52,6 +78,14 @@
 
     <div class="popup-content">
 
+<<<<<<< HEAD
+=======
+
+        <!-- ========================================
+             CLOSE BUTTON
+        ========================================= -->
+
+>>>>>>> origin/Yacoob
         <button
             type="button"
             class="close-btn"
@@ -80,6 +114,15 @@
         </a>
 
 
+<<<<<<< HEAD
+=======
+        <!-- ========================================
+             BANNER IMAGE
+
+             CLICK → DIRECT GMAIL COMPOSE
+        ========================================= -->
+
+>>>>>>> origin/Yacoob
         <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=hr%40ilogic.com.sg&su=Resume%20Submission%20-%20Walk-in%20Interview"
             target="_blank"
@@ -102,10 +145,23 @@
 
 
 
+<<<<<<< HEAD
+=======
+<!-- ========================================
+     MAIN WEBSITE
+========================================= -->
+
+>>>>>>> origin/Yacoob
 <div id="app"></div>
 
 
 
+<<<<<<< HEAD
+=======
+<!-- ========================================
+     SCROLL TO TOP BUTTON
+========================================= -->
+>>>>>>> origin/Yacoob
 
 <button
     class="scroll-top"
@@ -141,8 +197,32 @@
 
 
 
+<<<<<<< HEAD
 <script>
 
+=======
+<!-- ========================================
+     BANNER CONTROL SCRIPT
+========================================= -->
+
+<script>
+
+    // ========================================
+    // BANNER EXPIRY
+    //
+    // Banner active until:
+    //
+    // August 1, 2026
+    // 11:59:59 PM
+    //
+    // Expired from:
+    //
+    // August 2, 2026
+    // 12:00:00 AM
+    //
+    // Browser local time is used.
+    // ========================================
+>>>>>>> origin/Yacoob
 
     const expiryDate = new Date(
         2026,
@@ -155,6 +235,12 @@
     );
 
 
+<<<<<<< HEAD
+=======
+    // ========================================
+    // GET POPUP ELEMENT
+    // ========================================
+>>>>>>> origin/Yacoob
 
     const popup =
         document.getElementById(
@@ -162,6 +248,12 @@
         );
 
 
+<<<<<<< HEAD
+=======
+    // ========================================
+    // GET CLOSE BUTTON
+    // ========================================
+>>>>>>> origin/Yacoob
 
     const closeButton =
         document.getElementById(
@@ -169,7 +261,30 @@
         );
 
 
+<<<<<<< HEAD
 
+=======
+    // ========================================
+    // CLOSE STATUS
+    //
+    // false = Popup can be shown
+    // true  = User closed popup
+    //
+    // This variable is NOT saved.
+    //
+    // Therefore:
+    //
+    // Close popup
+    //      ↓
+    // Popup stays closed
+    //
+    // Refresh page
+    //      ↓
+    // Variable resets to false
+    //      ↓
+    // Popup appears again
+    // ========================================
+>>>>>>> origin/Yacoob
 
     let bannerClosed = false;
 
