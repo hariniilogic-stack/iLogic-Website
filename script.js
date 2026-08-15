@@ -59,7 +59,11 @@
         ["ERP Management", "solution.html?slug=ilogic-cloud-erp"],
         ["AI POS", "solution.html?slug=ilogic-ai-pos"],
         ["CMS System", "solution.html?slug=ilogic-cms"],
+        ["Transportation Application", "solution.html?slug=ilogic-transportation"],
+        ["Hospital Management", "solution.html?slug=ilogic-hospital-management"],
         ["CRM System", "solution.html?slug=ilogic-crm"],
+        ["Tailor Application", "solution.html?slug=ilogic-tailor"],
+        ["Hotel Management", "solution.html?slug=ilogic-hotel-management"],
       ],
       countries: ["SG"],
     },
@@ -695,6 +699,7 @@
         "Improves billing accuracy during checkout",
         "Suitable for supermarkets and grocery stores",
       ],
+      overviewIntro: "AI POS Scale is designed to simplify retail operations with intelligent weighing, automatic pricing, and seamless POS integration. It delivers speed, accuracy, and reliability for modern businesses.",
       overview: [
         "AI-powered product recognition for faster weighing workflows",
         "Automatic price calculation linked with POS operations",
@@ -707,6 +712,78 @@
         "User-friendly touch interface",
         "Reduced manual pricing errors",
         "Reliable support for busy stores",
+      ],
+      strip: [
+        ["High Accuracy", "Precise weighing every time", "shield"],
+        ["Fast & Reliable", "Quick processing and billing", "bolt"],
+        ["Cloud Enabled", "Real-time data sync and reports", "cloud"],
+        ["User Friendly", "Easy to use interface", "user"],
+        ["24/7 Support", "Dedicated support whenever you need", "headset"],
+      ],
+    },
+    "pos-terminal": {
+      highlights: ["Fast, high-performance checkout billing", "Real-time data sync across devices and branches", "Multiple payment options — UPI, Card, Cash, Wallet", "Built-in customer display for better engagement", "Advanced security for safe transactions"],
+      overviewIntro: "The iLogic POS Terminal is an all-in-one point of sale system designed to simplify billing, inventory management, and customer transactions. It delivers speed, accuracy, and reliability to grow your retail business.",
+      overview: ["High-performance billing for fast checkout", "Real-time inventory sync across all devices", "Multiple payment options including UPI, Card & Wallet", "Detailed sales reports and analytics"],
+      benefits: ["Faster billing and reduced waiting time", "Accurate inventory and sales management", "Easy integration with other business systems", "Secure transactions and data protection", "Improved customer satisfaction and business growth"],
+      strip: [
+        ["High Performance", "Reliable and powerful system for every business", "shield"],
+        ["Fast & Reliable", "Quick processing and smooth billing", "bolt"],
+        ["Cloud Enabled", "Real-time data sync and secure reports", "cloud"],
+        ["User Friendly", "Easy to learn and easy to use", "user"],
+        ["24/7 Support", "Dedicated support whenever you need", "headset"],
+      ],
+    },
+    "fnb-pos-kiosk": {
+      highlights: ["Designed for smooth day-to-day business usage", "Supports faster service and staff efficiency", "Built for dependable business operations", "Easy to use within modern retail workflows", "Helps improve consistency and service quality"],
+      overviewIntro: "The iLogic F&B POS Kiosk streamlines self-service ordering for food and beverage businesses, combining intuitive design with dependable performance for daily operations.",
+      overview: ["Built for reliable day-to-day business operations", "Supports efficient transaction processing", "Designed for smooth user interaction", "Suitable for modern retail and service environments"],
+      benefits: ["Reliable performance for regular use", "Easy integration with business systems", "Reduced manual work for staff", "Improved speed and operational accuracy", "Consistent support for business growth"],
+      strip: [
+        ["Fast & Efficient", "Speed up ordering and reduce wait time", "bolt"],
+        ["User Friendly", "Intuitive interface for easy self-ordering", "user"],
+        ["Reliable Performance", "Stable and dependable for daily operations", "shield"],
+        ["Easy Integration", "Seamless integration with POS systems", "plug"],
+        ["24/7 Support", "Dedicated support whenever you need", "headset"],
+      ],
+    },
+    "cash-management": {
+      highlights: ["Fast and accurate bill counting", "Advanced counterfeit detection for safety", "Reliable performance for critical cash processes", "Seamless integration into retail environments", "Improves accuracy and customer experience"],
+      overviewIntro: "The iLogic Cash Management System is built for secure, efficient handling of high cash volumes. It combines speed, accuracy, and reliability for demanding retail and banking environments.",
+      overview: ["High-speed, accurate bill counting", "Advanced counterfeit detection technology", "Auto sorting for faster reconciliation", "Seamless integration with POS and banking systems"],
+      benefits: ["Reduced manual counting errors", "Stronger protection against counterfeit currency", "Faster end-of-day reconciliation", "Improved cash handling security", "Reliable performance for high-volume environments"],
+      strip: [
+        ["High Accuracy", "Accurate counting with zero errors", "shield"],
+        ["Fast Processing", "High-speed processing for better efficiency", "bolt"],
+        ["Secure Handling", "Advanced security for every transaction", "lock"],
+        ["Easy Integration", "Seamless integration with POS systems", "plug"],
+        ["24/7 Support", "Dedicated support whenever you need", "headset"],
+      ],
+    },
+    "barcode-scanner": {
+      highlights: ["Supports all major 1D and 2D barcode standards", "Reliable wireless connectivity for seamless operation", "High-speed scanning for faster checkout", "Durable design built for daily retail use", "Easy integration with existing POS systems"],
+      overviewIntro: "The iLogic Barcode Scanner delivers fast, accurate scanning for busy retail and warehouse environments. Built for reliability, it keeps checkout and inventory processes moving without delay.",
+      overview: ["High-speed 1D/2D barcode reading", "Wireless connectivity for flexible use", "Fast decode for quicker checkout", "Durable build for daily commercial use"],
+      benefits: ["Faster, more accurate scanning at checkout", "Reduced cable clutter with wireless operation", "Reliable performance in high-traffic environments", "Easy integration with existing POS systems", "Lower maintenance with durable hardware"],
+      strip: [
+        ["High Accuracy", "Accurate scanning with minimal errors", "shield"],
+        ["Fast Performance", "High-speed scanning for better productivity", "bolt"],
+        ["Wireless Freedom", "Reliable connection without cables", "wifi"],
+        ["Durable Design", "Built to last with strong durability", "durable"],
+        ["24/7 Support", "Dedicated support whenever you need", "headset"],
+      ],
+    },
+    "thermal-printer": {
+      highlights: ["High-speed thermal printing for receipts", "Automatic cutter for clean, fast output", "Flexible USB and WiFi connectivity", "Reliable performance for busy checkout counters", "Easy integration with existing POS systems"],
+      overviewIntro: "The iLogic Thermal Printer delivers fast, reliable receipt printing built for busy retail and F&B checkout counters. Flexible connectivity keeps it compatible with existing POS setups.",
+      overview: ["High-speed thermal printing", "Automatic cutter for efficient operation", "USB and WiFi connectivity options", "Reliable performance for daily business use"],
+      benefits: ["Faster receipt printing at checkout", "Reduced manual tearing with auto cutter", "Flexible connection options for any setup", "Consistent, dependable print quality", "Easy integration with POS systems"],
+      strip: [
+        ["High Speed Printing", "Fast and reliable receipt printing for greater efficiency", "bolt"],
+        ["Auto Cutter", "Automatic cutting for seamless and quick operations", "cut"],
+        ["USB/WiFi Connectivity", "Flexible connection options for any environment", "wifi"],
+        ["Reliable Performance", "Consistent printing performance you can trust", "shield"],
+        ["24/7 Support", "Dedicated support whenever you need", "headset"],
       ],
     },
   };
@@ -2822,6 +2899,28 @@
     );
   }
 
+  function productStripIcon(key) {
+    const icons = {
+      shield: '<path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6z"/>',
+      bolt: '<path d="M13 2 3 14h7l-1 8 10-12h-7z"/>',
+      cloud: '<path d="M7 18a4 4 0 1 1 .7-7.9A5 5 0 0 1 17 9a4 4 0 0 1 0 8H7"/>',
+      user: '<circle cx="12" cy="8" r="3"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/>',
+      headset: '<path d="M4 13a8 8 0 0 1 16 0"/><rect x="3" y="13" width="4" height="6" rx="1"/><rect x="17" y="13" width="4" height="6" rx="1"/>',
+      wifi: '<path d="M2 8a15 15 0 0 1 20 0"/><path d="M5 12a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/>',
+      plug: '<path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0V8Z"/><path d="M12 17v4"/>',
+      lock: '<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 1 1 8 0v4"/>',
+      cut: '<circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><path d="m20 4-12 8M8 12l12 8"/>',
+      durable: '<path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M3 12l9 5 9-5"/><path d="M3 16l9 5 9-5"/>',
+    };
+    return '<svg viewBox="0 0 24 24" focusable="false">' + (icons[key] || icons.shield) + "</svg>";
+  }
+
+  function productHighlightStrip(items) {
+    return '<div class="product-highlight-strip reveal"><div class="container product-highlight-strip-inner">' +
+      items.map((item) => '<div class="product-strip-item"><span class="product-strip-icon">' + productStripIcon(item[2]) + '</span><div><strong>' + item[0] + '</strong><span>' + item[1] + "</span></div></div>").join("") +
+      "</div></div>";
+  }
+
   function galleryGrid(items) {
     return items
       .map(
@@ -4415,30 +4514,55 @@
   }
 
   function solutionVideoPlayer(item, detail) {
-    // We removed the "!detail.video" check so the component renders even without a video file
-    const imageSource = detail.image
-      ? detail.image.src
-      : detail.video
-        ? detail.video.src
-        : null;
-    const hasImage = Boolean(imageSource);
-
-    return (
-      '<article class="glass solution-video-card reveal" data-solution-player>' +
-      '<div class="solution-video-header">' +
-      '<div><p class="solution-video-kicker">Product Walkthrough</p><h3>' +
-      detail.headline +
-      "</h3></div>" +
-      "</div>" +
-      '<div class="solution-video-stage">' +
-      (hasImage
+    const hasVideo = Boolean(detail.video && detail.video.src);
+    const imageSource = detail.image ? detail.image.src : null;
+    const hasImage = !hasVideo && Boolean(imageSource);
+    const stageMarkup = hasVideo
+      ? '<video id="solutionVideo" class="solution-video-element" src="' +
+        detail.video.src +
+        '" playsinline preload="metadata"></video>' +
+        '<button class="solution-video-overlay" type="button" data-video-toggle aria-label="Play video">&#9654;</button>' +
+        '<p class="solution-video-caption" id="solutionVideoCaption" hidden></p>' +
+        '<span class="solution-video-mini-label">' +
+        detail.headline +
+        "</span>"
+      : hasImage
         ? '<img class="solution-image" src="' +
           imageSource +
           '" alt="' +
           detail.headline +
           '" style="width:100%; height:auto; cursor:pointer;">'
-        : "") +
+        : "";
+    const controlsMarkup = hasVideo
+      ? '<div class="solution-video-controls">' +
+        '<button class="solution-video-icon" type="button" data-video-toggle>Play</button>' +
+        '<input class="solution-video-progress" type="range" min="0" max="100" value="0" step="0.1" data-video-progress aria-label="Seek">' +
+        '<span class="solution-video-time" id="solutionVideoTime">00:00 / 00:00</span>' +
+        '<input class="solution-video-volume" type="range" min="0" max="1" step="0.05" value="1" data-video-volume aria-label="Volume">' +
+        '<button class="solution-video-icon" type="button" data-video-mute aria-label="Mute">&#128266;</button>' +
+        '<button class="solution-video-icon" type="button" data-video-captions aria-label="Toggle captions">CC</button>' +
+        '<button class="solution-video-icon" type="button" data-video-fullscreen aria-label="Fullscreen">&#9974;</button>' +
+        "</div>"
+      : "";
+    const headerActions = hasVideo
+      ? '<div class="solution-video-actions">' +
+        '<button class="solution-video-icon" type="button" data-video-float aria-label="Float player">&#8663;</button>' +
+        '<button class="solution-video-icon" type="button" data-video-minimize aria-label="Minimize player">-</button>' +
+        "</div>"
+      : "";
+
+    return (
+      '<article class="glass solution-video-card reveal" data-solution-player>' +
+      '<div class="solution-video-header"' +
+      (hasVideo ? " data-video-drag-handle" : "") +
+      "><div><p class=\"solution-video-kicker\">Product Walkthrough</p><h3>" +
+      detail.headline +
+      "</h3></div>" +
+      headerActions +
+      '</div><div class="solution-video-stage">' +
+      stageMarkup +
       "</div>" +
+      controlsMarkup +
       "</article>"
     );
   }
@@ -5015,11 +5139,18 @@
               "Improved speed and operational accuracy",
               "Consistent support for business growth",
             ],
+            strip: [
+              ["Reliable Performance", "Stable and dependable for daily operations", "shield"],
+              ["Fast & Efficient", "Speed up operations and reduce wait time", "bolt"],
+              ["Cloud Enabled", "Real-time data sync and reports", "cloud"],
+              ["User Friendly", "Easy to use interface", "user"],
+              ["24/7 Support", "Dedicated support whenever you need", "headset"],
+            ],
           }
         : null;
     app.innerHTML =
       header(false) +
-      '<main class="detail-hero"><div class="container"><div class="detail-grid">' +
+      '<main class="detail-hero product-detail-page"><div class="container"><div class="detail-grid">' +
       media +
       '<div class="detail-copy reveal"><span class="eyebrow">' +
       (kind === "project"
@@ -5039,9 +5170,13 @@
         : "") +
       '<div class="tag-list">' +
       tags.map((tag) => "<span>" + tag + "</span>").join("") +
-      '</div><div class="detail-actions" style="margin-top:1.5rem;"><a class="btn btn-primary" href="index.html#contact">Contact</a><a class="btn btn-ghost" href="index.html">Back</a></div></div></div><div class="detail-layout"><article class="glass detail-card reveal"><h3 class="gradient-text">Overview</h3>' +
+      '</div><div class="detail-actions" style="margin-top:1.5rem;"><a class="btn btn-primary" href="index.html#contact">Contact</a><a class="btn btn-ghost" href="index.html">Back</a></div></div></div></div>' +
+      (kind === "project" ? productHighlightStrip(productDetail.strip) : "") +
+      '<div class="container"><div class="detail-layout"><article class="glass detail-card reveal"><h3 class="gradient-text">Overview</h3>' +
       (kind === "project"
-        ? list(productDetail.overview.slice(0, 4))
+        ? (productDetail.overviewIntro
+            ? '<p class="muted">' + productDetail.overviewIntro + "</p>"
+            : "") + list(productDetail.overview.slice(0, 4))
         : body.map((text) => '<p class="muted">' + text + "</p>").join("")) +
       '</article><article class="glass detail-card reveal"><h3 class="gradient-text">Key Benefits</h3>' +
       (kind === "project"
