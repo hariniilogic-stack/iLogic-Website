@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+    iLogic Tech | Integrated Technology Solutions
+</title>
+
+<meta
+    name="description"
+    content="iLogic Tech delivers products, services, business software, training, and global technology support."
+>
+
+<link
+    rel="icon"
+    type="image/webp"
+    href="iLogo_logo.webp"
+>
+
+<link
+    rel="stylesheet"
+    href="styles.css"
+>
+
+<style>
+
+    #popupBanner[hidden] {
+        display: none !important;
+    }
+
+</style>
+</head>
+
+<body data-page="home">
+
+
+<div
+    id="popupBanner"
+    class="popup-banner"
+    hidden
+>
+
+    <div class="popup-content">
+
+        <button
+            type="button"
+            class="close-btn"
+            id="closeBannerBtn"
+            aria-label="Close banner"
+        >
+
+            &times;
+
+        </button>
+
+        <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=hr%40ilogic.com.sg&su=Resume%20Submission%20-%20Walk-in%20Interview"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resume-popover"
+            aria-label="Click here to send your resume to HR"
+        >
+
+            <span class="resume-popover-icon" aria-hidden="true">@</span>
+
+            <span>Click here to send your resume</span>
+
+            <span class="resume-popover-arrow" aria-hidden="true">&rarr;</span>
+
+        </a>
+
+
+        <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=hr%40ilogic.com.sg&su=Resume%20Submission%20-%20Walk-in%20Interview"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Send email to HR"
+        >
+
+            <img
+                src="./interview_image.jpeg"
+                alt="Banner"
+                class="popup-banner-image"
+            >
+
+        </a>
+
+
+    </div>
+
+</div>
+
+
+
+<div id="app"></div>
+
+
+
+
+<button
+    class="scroll-top"
+    id="scrollTop"
+    aria-label="Scroll to top"
+>
+
+    <span
+        class="rocket-ring"
+        aria-hidden="true"
+    ></span>
+
+
+    <span
+        class="rocket-icon"
+        aria-hidden="true"
+    >
+
+        <svg
+            viewBox="0 0 24 24"
+            focusable="false"
+        >
+
+            <path d="M12 19V6" />
+
+            <path d="m6.75 11.25 5.25-5.25 5.25 5.25" />
+
+        </svg>
+
+    </span>
+
+</button>
+
+
+
+<script>
+
+
+    const expiryDate = new Date(
+        2026,
+        7,
+        2,
+        0,
+        0,
+        0,
+        0
+    );
+
+
+
+    const popup =
+        document.getElementById(
+            "popupBanner"
+        );
+
+
+
+    const closeButton =
+        document.getElementById(
+            "closeBannerBtn"
+        );
+
+
+
+
+    let bannerClosed = false;
+
+
+    // ========================================
+    // HIDE POPUP
+    // ========================================
+
+    function hideBanner() {
+
+        if (!popup) {
+
+            return;
+
+        }
+
+        popup.hidden = true;
+
+        popup.style.display =
+            "none";
+
+    }
+
+
+    // ========================================
+    // SHOW POPUP
+    // ========================================
+
+    function showBanner() {
+
+        if (!popup) {
+
+            return;
+
+        }
+
+        popup.hidden = false;
+
+        popup.style.removeProperty(
+            "display"
+        );
+
+    }
+
+
+    // ========================================
+    // CLOSE BUTTON CLICK
+    //
+    // User clicks X:
+    //
+    // 1. bannerClosed = true
+    // 2. Popup closes immediately
+    // 3. Timer will not reopen it
+    // ========================================
+
+    if (closeButton) {
+
+        closeButton.addEventListener(
+            "click",
+            function () {
+
+                bannerClosed = true;
+
+                hideBanner();
+
+            }
+        );
+
+    }
+
+
+    // ========================================
+    // CHECK BANNER STATUS
+    // ========================================
+
+    function checkBanner() {
+
+        if (!popup) {
+
+            return;
+
+        }
+
+
+        // Get current browser date/time
+        const now =
+            new Date();
+
+
+        // ========================================
+        // EXPIRY CHECK
+        //
+        // August 2, 2026
+        // 12:00 AM or later
+        //
+        // Popup will never show.
+        // ========================================
+
+        if (
+            now.getTime()
+            >=
+            expiryDate.getTime()
+        ) {
+
+            hideBanner();
+
+            return;
+
+        }
+
+
+        // ========================================
+        // USER CLOSED POPUP
+        //
+        // Keep it hidden.
+        //
+        // The popup will only return
+        // after a page refresh.
+        // ========================================
+
+        if (bannerClosed) {
+
+            hideBanner();
+
+            return;
+
+        }
+
+
+        // ========================================
+        // BEFORE EXPIRY
+    //
+    // SHOW POPUP
+    // ========================================
+
+        showBanner();
+
+    }
+
+
+    // ========================================
+    // INITIAL CHECK
+    //
+    // Popup starts with "hidden".
+    //
+    // This prevents flicker during refresh.
+    // ========================================
+
+    checkBanner();
+
+
+    // ========================================
+    // AUTOMATIC EXPIRY CHECK
+    //
+    // Checks every 1 second.
+    //
+    // If user closes:
+    // → Popup stays closed
+    //
+    // If page is refreshed:
+    // → bannerClosed resets
+    // → Popup shows again
+    //
+    // August 2:
+    // → Popup stays permanently hidden
+    // ========================================
+
+    setInterval(
+        checkBanner,
+        1000
+    );
+
+
+</script>
+
+
+
+<!-- ========================================
+     MAIN WEBSITE SCRIPT
+========================================= -->
+
+<script src="script.js"></script>
+```
+
+</body>
+
+</html>
