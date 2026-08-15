@@ -1972,6 +1972,31 @@
     }
   }
 
+  function refineHomeGallery() {
+    const gallerySection = app.querySelector("#gallery");
+    if (!gallerySection) return;
+
+    gallerySection.setAttribute("data-country-display", "SG,IN");
+
+    const heading = gallerySection.querySelector(".section-heading");
+    if (heading) {
+      const eyebrow = heading.querySelector(".eyebrow");
+      const title = heading.querySelector("h2");
+      const description = heading.querySelector(".lead");
+      if (eyebrow) eyebrow.textContent = "Corporate Gallery";
+      if (title) title.textContent = "Company Spaces & Partner Events";
+      if (description) description.textContent = "Explore our workplaces, training venues, and client collaboration locations across Singapore, India, and our partner sites.";
+    }
+
+    const galleryGrid = gallerySection.querySelector(".gallery-folder-grid");
+    if (galleryGrid && !gallerySection.querySelector(".portfolio-summary")) {
+      const summary = document.createElement("div");
+      summary.className = "portfolio-summary reveal";
+      summary.innerHTML = '<p class="lead">Our gallery highlights company spaces, training locations, and engagement events, showcasing how iLogic Tech connects people, partners, and customers at every stage of our work.</p>';
+      galleryGrid.before(summary);
+    }
+  }
+
   function refineAboutContent() {
     const aboutSection = app.querySelector("#about .split-grid");
     if (!aboutSection) return;
@@ -2234,6 +2259,7 @@ function projectsPage() {
   if (page === "home") {
     homePage();
     refineHomeHero();
+    refineHomeGallery();
     refineAboutContent();
 
   }
