@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # iLogic-Website
 =======
+=======
+>>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 # iLogic Tech – Company Website
 
 Static website for iLogic Tech, an integrated technology solutions company with offices in Singapore and India (Pondicherry).
@@ -24,4 +27,7 @@ Plain HTML + CSS + JavaScript (no frameworks).
 - service.html injects dynamic meta via script.js based on `?slug=` URL param
 - JSON-LD structured data included in service.html
 - sitemap.xml submitted to Google Search Console at search.google.com/search-console
+<<<<<<< HEAD
 >>>>>>> origin/Yacoob
+=======
+>>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827

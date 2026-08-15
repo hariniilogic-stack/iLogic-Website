@@ -212,6 +212,7 @@ button {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #partners .section-heading .lead {
   margin: 0.4rem auto 0.9rem;
@@ -228,6 +229,8 @@ button {
 }
 
 >>>>>>> origin/Yacoob
+=======
+>>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 .site-header {
   position: fixed;
   top: 0;
@@ -1155,6 +1158,31 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   max-width: 26rem;
   max-height: 26rem;
   margin: 0 auto
+<<<<<<< HEAD
+=======
+}
+
+.product-detail-page .detail-media img {
+  animation: product-detail-float 4.8s ease-in-out infinite;
+  will-change: transform
+}
+
+@keyframes product-detail-float {
+  0%,
+  100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-14px)
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-detail-page .detail-media img {
+    animation: none
+  }
+>>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 }
 
 .hero-art-shell img {
@@ -1529,6 +1557,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #reviews .grid-3 {
   align-items: start;
@@ -1539,6 +1568,8 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
 }
 
 >>>>>>> origin/Yacoob
+=======
+>>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 #about .split-grid {
   align-items: start;
   grid-template-columns: 1fr !important;
@@ -2056,6 +2087,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .review-header {
   flex-wrap: wrap;
@@ -2088,6 +2120,8 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
 
 
 >>>>>>> origin/Yacoob
+=======
+>>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 #contact .contact-item {
   align-items: center;
   gap: .85rem
@@ -2407,10 +2441,14 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
 
 .marquee {
 <<<<<<< HEAD
+<<<<<<< HEAD
   overflow: hidden;
 =======
   overflow: visible;
 >>>>>>> origin/Yacoob
+=======
+  overflow: hidden;
+>>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
   margin-bottom: 1.85rem
 }
 
@@ -2440,6 +2478,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .logo-card.center-logo {
   position: relative;
@@ -2462,6 +2501,8 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
 }
 
 >>>>>>> origin/Yacoob
+=======
+>>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 .logo-card img {
   max-height: 100%;
   max-width: 100%;
