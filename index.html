@@ -3,6 +3,8 @@
 <html lang="en">
 
 <head>
+
+
 <meta charset="UTF-8">
 
 <meta
@@ -30,23 +32,6 @@
     href="styles.css"
 >
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-<!-- ========================================
-     HIDE POPUP INITIALLY
-
-     Popup remains hidden during the
-     first browser render.
-
-     This prevents flash/flicker
-     when refreshing the page.
-========================================= -->
-
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 <style>
 
     #popupBanner[hidden] {
@@ -54,28 +39,10 @@
     }
 
 </style>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-```
-
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 </head>
 
 <body data-page="home">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-```
-<!-- ========================================
-     BANNER POPUP
-========================================= -->
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 
 <div
     id="popupBanner"
@@ -85,17 +52,6 @@
 
     <div class="popup-content">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-        <!-- ========================================
-             CLOSE BUTTON
-        ========================================= -->
-
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
         <button
             type="button"
             class="close-btn"
@@ -124,18 +80,6 @@
         </a>
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        <!-- ========================================
-             BANNER IMAGE
-
-             CLICK → DIRECT GMAIL COMPOSE
-        ========================================= -->
-
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
         <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=hr%40ilogic.com.sg&su=Resume%20Submission%20-%20Walk-in%20Interview"
             target="_blank"
@@ -158,29 +102,10 @@
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<!-- ========================================
-     MAIN WEBSITE
-========================================= -->
-
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 <div id="app"></div>
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<!-- ========================================
-     SCROLL TO TOP BUTTON
-========================================= -->
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 
 <button
     class="scroll-top"
@@ -216,37 +141,8 @@
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 <script>
 
-=======
-<!-- ========================================
-     BANNER CONTROL SCRIPT
-========================================= -->
-
-<script>
-
-    // ========================================
-    // BANNER EXPIRY
-    //
-    // Banner active until:
-    //
-    // August 1, 2026
-    // 11:59:59 PM
-    //
-    // Expired from:
-    //
-    // August 2, 2026
-    // 12:00:00 AM
-    //
-    // Browser local time is used.
-    // ========================================
->>>>>>> origin/Yacoob
-=======
-<script>
-
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 
     const expiryDate = new Date(
         2026,
@@ -259,15 +155,6 @@
     );
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // ========================================
-    // GET POPUP ELEMENT
-    // ========================================
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 
     const popup =
         document.getElementById(
@@ -275,15 +162,6 @@
         );
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // ========================================
-    // GET CLOSE BUTTON
-    // ========================================
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 
     const closeButton =
         document.getElementById(
@@ -291,41 +169,11 @@
         );
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-    // ========================================
-    // CLOSE STATUS
-    //
-    // false = Popup can be shown
-    // true  = User closed popup
-    //
-    // This variable is NOT saved.
-    //
-    // Therefore:
-    //
-    // Close popup
-    //      ↓
-    // Popup stays closed
-    //
-    // Refresh page
-    //      ↓
-    // Variable resets to false
-    //      ↓
-    // Popup appears again
-    // ========================================
->>>>>>> origin/Yacoob
-=======
-
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 
     let bannerClosed = false;
 
 
-    // ========================================
-    // HIDE POPUP
-    // ========================================
 
     function hideBanner() {
 
@@ -343,7 +191,6 @@
     }
 
 
- 
 
     function showBanner() {
 
