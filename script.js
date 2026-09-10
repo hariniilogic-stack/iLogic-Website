@@ -2691,334 +2691,6 @@
   const galleryImages = Object.fromEntries(galleryCollections.map(item => [item.key, item.images]));
   const languageCertPhotos = ["src/assets/languagecert/languagecert-1.webp", "src/assets/languagecert/languagecert-2.webp", "src/assets/languagecert/languagecert-3.webp", "src/assets/languagecert/languagecert-4.webp", "src/assets/languagecert/languagecert-5.webp", "src/assets/languagecert/languagecert-6.webp", "src/assets/languagecert/languagecert-7(1).webp"];
 
-      intro:
-        "A hotel operations platform that centralizes reservations, room inventory, housekeeping, guest billing, and occupancy visibility in one dashboard.",
-      stats: [
-        ["Live", "Occupancy"],
-        ["Multi", "Property"],
-        ["Guest", "Billing"],
-      ],
-      video: {
-        src: "Video/hotel-management.mp4",
-        cues: [
-          "Manage reservations, rooms, housekeeping, and billing from one dashboard.",
-          "Reduce overbooking, speed up check-ins, and improve guest service.",
-          "Track occupancy, guest operations, and property performance in real time.",
-          "Scale from a single hotel to multiple properties with ease.",
-        ],
-      },
-      sections: [
-        {
-          title: "Why Choose iLogic Tech's Hotel Management Software?",
-          body: [
-            "Centralize reservations, room inventory, housekeeping, and billing in one modern system.",
-            "The platform helps reduce overbooking, speed up front-desk workflows, and deliver a smoother guest experience.",
-          ],
-        },
-        {
-          title: "Key Features for Hotel Operations",
-          items: [
-            "Reservation calendar",
-            "Room inventory control",
-            "Housekeeping status",
-            "Billing and invoices",
-            "Guest profiles",
-            "Occupancy reports",
-            "Role-based access",
-          ],
-        },
-        {
-          title: "Perfect for Every Stay Type",
-          items: [
-            "Hotels",
-            "Resorts",
-            "Business hotels",
-            "Serviced apartments",
-            "Hostels",
-            "Homestays",
-            "Boutique hotels",
-            "Luxury properties",
-            "Airport hotels",
-            "Event venues",
-            "Multi-property chains",
-          ],
-        },
-        {
-          title: "Benefits of a Unified Hotel System",
-          items: [
-            "Reduced overbooking risk",
-            "Faster check-in and check-out",
-            "Better room utilization",
-            "Clean housekeeping coordination",
-            "Accurate billing and folios",
-            "Real-time occupancy insights",
-            "Multi-property visibility",
-            "Secure guest data storage",
-            "Improved guest satisfaction",
-          ],
-        },
-        {
-          title: "Real-Time Occupancy and Guest Operations",
-          items: [
-            "See occupied versus available rooms",
-            "Generate guest folios instantly",
-            "Track revenue and booking trends",
-            "Find guest details fast",
-          ],
-        },
-        {
-          title: "FAQs",
-          faqs: [
-            [
-              "Can I manage multiple properties?",
-              "Yes. The system supports multi-property management with centralized reporting.",
-            ],
-            [
-              "Does it handle housekeeping status?",
-              "Yes. Rooms can be marked clean, dirty, or in service with live updates.",
-            ],
-            [
-              "Is guest data secure?",
-              "Yes. Guest information is encrypted and protected with role-based access.",
-            ],
-            [
-              "Can I connect with OTAs?",
-              "Yes. OTA and channel integrations can be supported for smoother booking management.",
-            ],
-          ],
-        },
-      ],
-      ctaTitle: "Get Started with iLogic Hotel Management Software",
-      ctaText:
-        "Book a free demo to simplify reservations, room operations, billing, and guest service.",
-    },
-  };
-  const clientLogos = [
-    "src/assets/clients/client1.webp",
-    "src/assets/clients/client2.webp",
-    "src/assets/clients/client3.webp",
-    "src/assets/clients/client4.webp",
-    "src/assets/clients/client5.webp",
-    "src/assets/clients/client6.webp",
-    "src/assets/clients/client7.webp",
-    "src/assets/clients/client8.webp",
-    "src/assets/clients/client9.webp",
-    "src/assets/clients/client11.webp",
-    "src/assets/clients/client12.webp",
-    "src/assets/clients/client13.webp",
-    "src/assets/clients/client14.webp",
-    "src/assets/clients/client15.webp",
-    "src/assets/clients/client16.webp",
-    "src/assets/clients/client17.webp",
-    "src/assets/clients/client18.webp",
-    "src/assets/clients/client19.webp",
-    "src/assets/clients/client-20.webp",
-  ];
-  const partners = [
-    "src/assets/partners/partnet-1.webp",
-    "src/assets/partners/partner-2.webp",
-    "src/assets/partners/partner-3.webp",
-    "src/assets/partners/partner-4.webp",
-    "src/assets/partners/partneddr5.webp",
-    languageCertLogo,
-  ];
-  const team = [
-    {
-      role: "Founder",
-      title: "Founder and CEO",
-      name: "Mr. Abdul Rahim",
-      image: "src/assets/owners/Founder.jpeg",
-    },
-    {
-      role: "Director",
-      title: "Managing Director",
-      name: "Mr. Abdul Rajak",
-      image: "src/assets/owners/Director.jpeg",
-    },
-  ];
-  const reviews = [
-    [
-      "Sathyanarayana Nalam",
-      "Business Owner",
-      "I am very pleased with the technical skills and service of iLogic Tech staff. From placing the order to installation and training of the POS system, the entire process was smooth and timely.",
-    ],
-    [
-      "Velu Govindaraj",
-      "Retail Manager",
-      "I am extremely satisfied with the POS system provided by iLogic Tech. The setup and go-live process were smooth and the staff were friendly and responsive.",
-    ],
-    [
-      "Habi Singapore",
-      "Store Owner",
-      "Excellent service and smooth installation. The team explained everything clearly and trained our staff well.",
-    ],
-    [
-      "Riswan Jaman",
-      "Business Owner",
-      "Great experience with iLogic Tech. Their team is professional, and the POS solution perfectly fits our business needs.",
-    ],
-    [
-      "AZIM's Fashion",
-      "Business Owner",
-      "iLogic Tech provided excellent service, reliable software, and strong after-sales support.",
-    ],
-  ];
-  const defaultTestimonials = reviews.map((item) => ({
-    name: item[0],
-    role: item[1],
-    rating: 5,
-    message: item[2],
-  }));
-  const branches = [
-    {
-      title: "Singapore",
-      address:
-        "10 Ubi Crescent #05-41 (Unit A), Ubi TechPark, Lobby C, Singapore - 408564",
-      phone: "+65 9017 5062, +65 8177 5062",
-      map: "https://www.google.com/maps/search/?api=1&query=10+Ubi+Crescent+%2305-41+Unit+A%2C+Ubi+TechPark%2C+Lobby+C%2C+Singapore+408564",
-    },
-    {
-      title: "India (Madurai)",
-      address:
-        "93/3 Pattukottai Sundara Street, Arul Nagar, Bypass Road, Opp PRC, Madurai - 625016",
-      phone: "+91 72000 05541, +65 8177 5062",
-      map: "https://www.google.com/maps/place/iLOGIC+TECH,+Madurai/@9.9139841,78.0945502,17z/data=!3m1!4b1!4m6!3m5!1s0x3b00cf002c400a23:0x84be009f3dfe1f5f!8m2!3d9.9139841!4d78.0971251!16s%2Fg%2F11yqbyskc8?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D",
-    },
-    {
-      title: "India (Pondicherry)",
-      address:
-        "15(3), Ignacy Maistry Street, MG Road Area, Pondicherry - 605001",
-      phone: "+91 91766 09303",
-      map: "https://www.google.com/maps/place/iLogic+Tech,+Puducherry/@11.9290166,79.8247117,17z/data=!3m1!4b1!4m15!1m8!3m7!1s0x3a536180e4aaea81:0x77def1b76c661b67!2s15,+Ignace+Mestry+St,+Chinnakadai,+MG+Road+Area,+Puducherry,+605001!3b1!8m2!3d11.9290166!4d79.8272866!16s%2Fg%2F11jkwdn1g8!3m5!1s0x3a53610021c0e9b7:0x6550dd8bf2e92fc1!8m2!3d11.9290166!4d79.8272866!16s%2Fg%2F11n4fkjhl6?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D",
-    },
-    {
-      title: "Kuwait",
-      address: "Office No. 39, Wala Complex, Hawalli, Kuwait",
-      phone: "+965 66598721",
-      map: "https://www.google.com/maps/search/?api=1&query=Office+No.+39%2C+Wala+Complex%2C+Hawalli%2C+Kuwait",
-    },
-    {
-      title: "Ireland",
-      address: "15, Orwell Woods, Datry Rathgar, Dublin - 6, Ireland",
-      phone: "+353 877057694",
-      map: "https://www.google.com/maps/search/?api=1&query=15+Orwell+Woods%2C+Datry+Rathgar%2C+Dublin+6%2C+Ireland",
-    },
-  ];
-  const galleryCollections = [
-    {
-      key: "placements",
-      label: "Placement & Career Guidance - 2026",
-      title: "Placement & Career Guidance - 2026",
-      subtitle:
-        "Placement and career guidance sessions delivered for students preparing for industry opportunities.",
-      location: "Latha Mathavan College, Madurai",
-      images: [
-        "src/assets/placements/placement-1.webp",
-        "src/assets/placements/placement-2.webp",
-        "src/assets/placements/placement-3.webp",
-        "src/assets/placements/placement-4.webp",
-        "src/assets/placements/placement-5.webp",
-        "src/assets/placements/placement-6.webp",
-      ],
-    },
-    {
-      key: "internship",
-      label: "Advanced Software Development & Programming Training",
-      title: "Advanced Software Development & Programming Training",
-      subtitle:
-        "Hands-on internship sessions focused on practical software development, coding, and project execution.",
-      location: "AJK Institute of College, Madurai",
-      images: [
-        "src/assets/internship/intern-1.webp",
-        "src/assets/internship/intern-2.webp",
-        "src/assets/internship/intern-3.webp",
-        "src/assets/internship/intern-4.webp",
-        "src/assets/internship/intern-5.webp",
-        "src/assets/internship/intern-6.webp",
-        "src/assets/internship/intern-7.webp",
-      ],
-    },
-    {
-      key: "presentations",
-      label: "Technical Training",
-      title: "Technical Training",
-      subtitle:
-        "Technical training workshops designed to build confidence with real-world tools and presentation skills.",
-      location: "Selvam School of Technology, Madurai",
-      images: [
-        "src/assets/presentation/sit-1.webp",
-        "src/assets/presentation/sit-2.webp",
-        "src/assets/presentation/sit-3.webp",
-        "src/assets/presentation/sit-4.webp",
-      ],
-    },
-    {
-      key: "languagecert",
-      label: "LanguageCert",
-      title: "LanguageCert",
-      subtitle:
-        "Official LanguageCert partner sessions supporting students and professionals with certification readiness.",
-      location: "Certification Events and Training Sessions",
-      images: [
-        "src/assets/languagecert/languagecert-1.webp",
-        "src/assets/languagecert/languagecert-2.webp",
-        "src/assets/languagecert/languagecert-3.webp",
-        "src/assets/languagecert/languagecert-4.webp",
-        "src/assets/languagecert/languagecert-5.webp",
-        "src/assets/languagecert/languagecert-6.webp",
-      ],
-    },
-    {
-      key: "office",
-      label: "Pondicherry Office",
-      title: "Pondicherry Office",
-      subtitle:
-        "Snapshots from our Pondicherry workspace, day-to-day environment, and team setup.",
-      location: "iLogic Tech Pondicherry Office",
-      images: [
-        "src/assets/office/pondicherry-office-3.webp",
-        "src/assets/office/pondicherry-office-4.webp",
-        "src/assets/office/pondicherry-office-5.webp",
-        "src/assets/office/pondicherry-office-6.webp",
-        "src/assets/office/pondicherry-office-7.webp",
-        "src/assets/office/pondicherry-office-8.webp",
-        "src/assets/office/pondicherry-office-9.webp",
-        "src/assets/office/pondicherry-office-10.webp",
-      ],
-    },
-    {
-      key: "expo",
-      label: "MADURAI EXPO-2025",
-      title: "Madurai Expo-2025",
-      subtitle:
-        "Live demos for customers and gathering their requirements on the spot.",
-      location: "Madurai Expo 2025",
-      images: [
-        "src/assets/expo/expo-1.webp",
-        "src/assets/expo/expo-2.webp",
-        "src/assets/expo/expo-3.webp",
-        "src/assets/expo/expo-4.webp",
-        "src/assets/expo/expo-5.webp",
-        "src/assets/expo/expo-6.webp",
-        "src/assets/expo/expo-7.webp",
-        "src/assets/expo/expo-8.webp",
-        "src/assets/expo/expo-9.webp",
-        "src/assets/expo/expo-10.webp",
-      ],
-    },
-  ];
-  const galleryImages = Object.fromEntries(
-    galleryCollections.map((item) => [item.key, item.images])
-  );
-  const languageCertPhotos = [
-    "src/assets/languagecert/languagecert-1.webp",
-    "src/assets/languagecert/languagecert-2.webp",
-    "src/assets/languagecert/languagecert-3.webp",
-    "src/assets/languagecert/languagecert-4.webp",
-    "src/assets/languagecert/languagecert-5.webp",
-    "src/assets/languagecert/languagecert-6.webp",
-    "src/assets/languagecert/languagecert-7(1).webp",
-  ];
 
 
   function list(items) {
@@ -4269,23 +3941,6 @@
     return String(name || "User").split(/\s+/).filter(Boolean).map(part => part[0]).join("").slice(0, 2).toUpperCase() || "U";
   }
 
-  function testimonialCardMarkup(item) {
-    return '<article class="glass card reveal is-visible">' +
-      '<div class="review-header"><div class="avatar-badge">' + avatarInitials(item.name) + '</div><div class="review-toggle"><h3 class="review-name" style="margin:0; cursor:pointer;">' + escapeHtml(item.name) + '</h3><p class="review-company muted" style="margin:0.2rem 0 0;">' + escapeHtml(item.company) + ' | ' + escapeHtml(item.role) + '</p><p class="stars">' + Array((item.rating || 0) + 1).join("★") + '</p><p class="review-message muted" style="margin:0.75rem 0 0;">' + escapeHtml(item.message) + '</p></div></div></article>';
-  }
-
-  function feedbackModal() {
-    return '<div class="feedback-modal" id="feedbackModal" aria-hidden="true">' +
-    return (
-      String(name || "User")
-        .split(/\s+/)
-        .filter(Boolean)
-        .map((part) => part[0])
-        .join("")
-        .slice(0, 2)
-        .toUpperCase() || "U"
-    );
-  }
 
   function testimonialCardMarkup(item) {
     return (
@@ -4448,13 +4103,6 @@
       email: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="m5 8 7 5 7-5"/></svg>',
       web: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4a13 13 0 0 1 0 16M12 4a13 13 0 0 0 0 16"/></svg>'
 
-      location:
-        '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19a6.5 6.5 0 0 1 13 0"/></svg>',
-      phone:
-        '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 5.8h2.4l1.2 3.1-1.5 1.6a13.7 13.7 0 0 0 3.9 3.9l1.6-1.5 3.1 1.2v2.4c0 .7-.5 1.2-1.2 1.2A11.7 11.7 0 0 1 6.3 7c0-.7.5-1.2 1.2-1.2Z"/></svg>',
-      email:
-        '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="m5 8 7 5 7-5"/></svg>',
-      web: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4a13 13 0 0 1 0 16M12 4a13 13 0 0 0 0 16"/></svg>',
 
     };
     return icons[type] || icons.phone;
@@ -4491,9 +4139,6 @@
         "Explore our offices across Singapore, India, Kuwait, and Ireland."
       ) +
       '<div class="branch-row">' +
-  function contactSection() {
-    return '<section class="section" id="contact"><div class="container">' + sectionHeader("Contact Us", "Get In Touch", "Ready to transform your business with cutting-edge technology? Let us talk about how we can help.") + '<div class="contact-grid"><div class="contact-stack"><div class="glass card reveal"><div class="contact-item"><div class="contact-icon" aria-hidden="true">' + contactIcon("location") + '</div><div><strong>Contact Details</strong></div></div></div><div class="glass card reveal"><div class="contact-item"><div class="contact-icon" aria-hidden="true">' + contactIcon("phone") + '</div><div><strong>Phone</strong><p class="muted">+65 90175062 / +91 72000 05541</p></div></div></div><div class="glass card reveal"><div class="contact-item"><div class="contact-icon" aria-hidden="true">' + contactIcon("email") + '</div><div><strong>Email</strong><p class="muted">info@ilogic.com.sg<br>hr@ilogic.com.sg</p></div></div></div><div class="glass card reveal"><div class="contact-item"><div class="contact-icon" aria-hidden="true">' + contactIcon("web") + '</div><div><strong>Website</strong><p class="muted">www.ilogic.com.sg</p></div></div></div></div><div class="glass card reveal"><form class="contact-form" id="contactForm"><h3 class="gradient-text" style="font-family:Space Grotesk, sans-serif; margin:0;">Send us a message</h3><div class="form-grid"><label>Full Name<input name="name" required /></label><label>Email<input type="email" name="email" required /></label></div><div class="form-grid"><label>Phone<input name="phone" required /></label><label>Subject<input name="subject" value="New enquiry" required /></label></div><label>Message<textarea name="message" required></textarea></label><button class="btn btn-primary" type="submit">Send Message</button></form></div></div></div></section>';
-    
       branches
         .map(
           (item) =>
@@ -5093,7 +4738,6 @@
       hiringWidget() +
       internshipChatbotModal() +
       examNotification();
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
   }
 
   function refineHomeHero() {
@@ -5578,62 +5222,6 @@ function jobsPage() {
       '</main>' + footer() + whatsappFloat() + googleFeedbackFloat() + feedbackModal() + hiringWidget() + internshipChatbotModal();
 }
 
-    app.innerHTML =
-      header(false) +
-      '<main class="language-training-page"><section class="section hero"><div class="container" style="text-align:center;"><img src="' +
-      languageCertLogo +
-      '" alt="LanguageCert" style="height:4.4rem;margin:0 auto 1rem;" /><span class="eyebrow">Official Partner</span><h1 class="gradient-text" style="font-size:clamp(2.5rem,6vw,4.8rem);margin-bottom:1rem;">LanguageCert Training</h1><p class="lead" style="max-width:52rem;margin:0 auto;">Structured preparation for globally recognized English language certification across academic, professional, and personal communication goals.</p></div></section><section class="section"><div class="container"><div class="skills-grid language-training-skills">' +
-      [
-        [
-          "Listening",
-          "Comprehend spoken English in various real-world contexts",
-        ],
-        ["Reading", "Understand written texts and extract key information"],
-        ["Writing", "Produce clear, well-structured written English"],
-        ["Speaking", "Communicate effectively and fluently in spoken English"],
-      ]
-        .map(
-          (item) =>
-            '<article class="glass card reveal"><div class="icon-badge">' +
-            item[0].slice(0, 2).toUpperCase() +
-            "</div><h3>" +
-            item[0] +
-            '</h3><p class="muted">' +
-            item[1] +
-            "</p></article>"
-        )
-        .join("") +
-      '</div></div></section><section class="section section-muted"><div class="container"><div class="highlight-grid language-training-highlights">' +
-      [
-        [
-          "Reliable",
-          "Internationally recognized certification trusted worldwide",
-        ],
-        ["Fast Results", "Quick turnaround and results in days, not weeks"],
-        [
-          "Global Recognition",
-          "Accepted by institutions and employers worldwide",
-        ],
-      ]
-        .map(
-          (item) =>
-            '<article class="glass card reveal"><div class="icon-badge">' +
-            item[0].slice(0, 2).toUpperCase() +
-            "</div><h3>" +
-            item[0] +
-            '</h3><p class="muted">' +
-            item[1] +
-            "</p></article>"
-        )
-        .join("") +
-      '</div></div></section><section class="section"><div class="container"><article class="glass card reveal" style="text-align:center;"><h2 class="gradient-text" style="font-size:2.3rem;">Get Started with LanguageCert</h2><p class="lead">Contact our India support team to enroll in LanguageCert training and examinations.</p><div class="detail-actions" style="justify-content:center;"><a class="btn btn-primary" href="tel:+917200005541">+91 72000 05541</a><a class="btn btn-secondary" target="_blank" rel="noreferrer" href="https://www.languagecert.org">languagecert.org</a></div></article></div></section></main>' +
-      footer() +
-      whatsappFloat() +
-      googleFeedbackFloat() +
-      feedbackModal() +
-      hiringWidget() +
-      internshipChatbotModal();
-  }
 
   function internshipPage() {
     // ---------- data ----------
@@ -7269,35 +6857,6 @@ function projectsPage() {
     checkForSavedDraft();
     updateWhatsappBridge();
 
-  const form = document.getElementById("contactForm");
-  if (form) {
-    form.addEventListener("submit", function(event) {
-      event.preventDefault();
-      const data = new FormData(form);
-      const body = ["Name: " + data.get("name"), "Email: " + data.get("email"), "Phone: " + data.get("phone"), "", data.get("message")].join("\n");
-      window.location.href = "mailto:info@ilogic.com.sg?subject=" + encodeURIComponent(String(data.get("subject"))) + "&body=" + encodeURIComponent(body);
-    });
-
-  const form = document.getElementById("contactForm");
-  if (form) {
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      const data = new FormData(form);
-      const body = [
-        "Name: " + data.get("name"),
-        "Email: " + data.get("email"),
-        "Phone: " + data.get("phone"),
-        "",
-        data.get("message"),
-      ].join("\n");
-      window.location.href =
-        "mailto:info@ilogic.com.sg?subject=" +
-        encodeURIComponent(String(data.get("subject"))) +
-        "&body=" +
-        encodeURIComponent(body);
-    });
-
-  }
 
   // Add click handler for tailor image
   const tailorImage = document.querySelector(".solution-image");
@@ -7806,10 +7365,10 @@ function projectsPage() {
       });
     }
     if (captionButton) {
-
-      captionButton.addEventListener("click", function() {
       captionButton.addEventListener("click", function () {
+        captionsEnabled = !captionsEnabled;
         captionButton.classList.toggle("is-active", captionsEnabled);
+        updateCaptions();
       });
       captionButton.classList.add("is-active");
     }
@@ -8182,14 +7741,16 @@ function projectsPage() {
     });
   }
   const examToast = document.getElementById("examToast");
-  const examToastTimer = {
-    id: 0,
+  const examToastTimer = { id: 0 };
+
+  function showExamToast(message) {
     if (!examToast) return;
+    examToast.innerHTML = message;
     examToast.classList.remove("is-visible");
     void examToast.offsetWidth;
     examToast.classList.add("is-visible");
     if (examToastTimer.id) window.clearTimeout(examToastTimer.id);
-    examToastTimer.id = window.setTimeout(function() {
+    examToastTimer.id = window.setTimeout(function () {
       examToast.classList.remove("is-visible");
     }, 3000);
   }
@@ -8621,6 +8182,4 @@ function projectsPage() {
     galleryCollections.forEach(item => ensureCollectionState(item.key));
     saveGalleryState();
   }
-})();
-
-
+}})();

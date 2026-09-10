@@ -211,9 +211,7 @@ button {
   margin-right: auto
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 #partners .section-heading .lead {
   margin: 0.4rem auto 0.9rem;
 }
@@ -228,9 +226,7 @@ button {
   margin: 0;
 }
 
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
+
 .site-header {
   position: fixed;
   top: 0;
@@ -1158,8 +1154,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   max-width: 26rem;
   max-height: 26rem;
   margin: 0 auto
-<<<<<<< HEAD
-=======
+
 }
 
 .product-detail-page .detail-media img {
@@ -1182,7 +1177,6 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   .product-detail-page .detail-media img {
     animation: none
   }
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 }
 
 .hero-art-shell img {
@@ -1556,9 +1550,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 #reviews .grid-3 {
   align-items: start;
 }
@@ -1567,9 +1559,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   align-self: start;
 }
 
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
+
 #about .split-grid {
   align-items: start;
   grid-template-columns: 1fr !important;
@@ -2086,9 +2076,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   gap: 1rem
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 .review-header {
   flex-wrap: wrap;
 }
@@ -2119,9 +2107,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
 }
 
 
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
+
 #contact .contact-item {
   align-items: center;
   gap: .85rem
@@ -2196,7 +2182,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   padding: .8rem 1.2rem
 }
 
-<<<<<<< HEAD
+
 .contact-form-status {
   min-height: 1.2rem;
   font-size: .92rem;
@@ -2374,8 +2360,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   stroke-linejoin: round;
 }
 
-=======
->>>>>>> origin/Yacoob
+
 .list {
   display: grid;
   gap: 1.1rem;
@@ -2440,15 +2425,10 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
 }
 
 .marquee {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   overflow: hidden;
-=======
   overflow: visible;
->>>>>>> origin/Yacoob
-=======
   overflow: hidden;
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
   margin-bottom: 1.85rem
 }
 
@@ -2477,9 +2457,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   -webkit-backdrop-filter: none
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 .logo-card.center-logo {
   position: relative;
   z-index: 2;
@@ -2500,9 +2478,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   }
 }
 
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
+
 .logo-card img {
   max-height: 100%;
   max-width: 100%;
