@@ -211,26 +211,6 @@ button {
   margin-right: auto
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-#partners .section-heading .lead {
-  margin: 0.4rem auto 0.9rem;
-}
-
-#partners .portfolio-summary {
-  max-width: 46rem;
-  margin: 0 auto 1.2rem;
-  text-align: center;
-}
-
-#partners .portfolio-summary .lead {
-  margin: 0;
-}
-
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 .site-header {
   position: fixed;
   top: 0;
@@ -1158,31 +1138,6 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   max-width: 26rem;
   max-height: 26rem;
   margin: 0 auto
-<<<<<<< HEAD
-=======
-}
-
-.product-detail-page .detail-media img {
-  animation: product-detail-float 4.8s ease-in-out infinite;
-  will-change: transform
-}
-
-@keyframes product-detail-float {
-  0%,
-  100% {
-    transform: translateY(0)
-  }
-
-  50% {
-    transform: translateY(-14px)
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .product-detail-page .detail-media img {
-    animation: none
-  }
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 }
 
 .hero-art-shell img {
@@ -1556,20 +1511,6 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-#reviews .grid-3 {
-  align-items: start;
-}
-
-#reviews .grid-3 .glass.card {
-  align-self: start;
-}
-
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 #about .split-grid {
   align-items: start;
   grid-template-columns: 1fr !important;
@@ -2086,42 +2027,6 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   gap: 1rem
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-.review-header {
-  flex-wrap: wrap;
-}
-
-.review-toggle {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-}
-
-.review-company,
-.stars,
-.review-message {
-  display: none;
-  opacity: 0;
-  transition: opacity .25s ease;
-}
-
-.glass.card {
-  cursor: pointer;
-}
-
-.glass.card.active .review-company,
-.glass.card.active .stars,
-.glass.card.active .review-message {
-  display: block;
-  opacity: 1;
-}
-
-
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 #contact .contact-item {
   align-items: center;
   gap: .85rem
@@ -2196,186 +2101,6 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   padding: .8rem 1.2rem
 }
 
-<<<<<<< HEAD
-.contact-form-status {
-  min-height: 1.2rem;
-  font-size: .92rem;
-  font-weight: 600;
-  line-height: 1.4;
-  margin: -.2rem 0 .1rem;
-  transition: color .2s ease;
-}
-
-.contact-form-status:empty {
-  display: none;
-}
-
-.contact-form-status.is-error {
-  color: #d1345b;
-}
-
-.contact-form-status.is-success {
-  color: #1f9d63;
-}
-
-/* ---- Contact Intelligence: Live office status ---- */
-.office-status-list {
-  list-style: none;
-  display: grid;
-  gap: .5rem;
-}
-
-.office-status-row {
-  display: flex;
-  align-items: center;
-  gap: .55rem;
-  font-size: .9rem;
-}
-
-.office-status-flag {
-  font-size: 1rem;
-  line-height: 1;
-}
-
-.office-status-name {
-  font-weight: 600;
-  color: var(--text);
-  flex: 0 0 auto;
-}
-
-.office-status-dot {
-  width: .55rem;
-  height: .55rem;
-  border-radius: 999px;
-  background: var(--muted);
-  flex: 0 0 auto;
-}
-
-.office-status-dot.is-open {
-  background: #1f9d63;
-  box-shadow: 0 0 0 3px rgba(31, 157, 99, 0.18);
-}
-
-.office-status-dot.is-closed {
-  background: #d1345b;
-  box-shadow: 0 0 0 3px rgba(209, 52, 91, 0.14);
-}
-
-.office-status-text {
-  font-size: .85rem;
-  margin-left: auto;
-}
-
-/* ---- Contact Intelligence: smart routing card ---- */
-.smart-routing-card .contact-icon {
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: #fff;
-}
-
-/* ---- Contact Intelligence: quick actions ---- */
-.quick-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .4rem;
-  margin-top: .6rem;
-}
-
-.quick-action {
-  display: inline-flex;
-  align-items: center;
-  gap: .3rem;
-  padding: .35rem .65rem;
-  border-radius: 999px;
-  border: 1px solid var(--line-strong);
-  background: rgba(237, 229, 255, 0.45);
-  color: var(--text);
-  font-size: .8rem;
-  font-weight: 600;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background .2s ease, transform .2s ease;
-}
-
-.quick-action:hover {
-  background: rgba(237, 229, 255, 0.75);
-  transform: translateY(-1px);
-}
-
-.quick-action svg {
-  width: 1rem;
-  height: 1rem;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-/* ---- Contact Intelligence: draft banner + save indicator ---- */
-.draft-banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-  background: rgba(139, 92, 246, 0.1);
-  border: 1px solid rgba(139, 92, 246, 0.25);
-  border-radius: 16px;
-  padding: .85rem 1rem;
-  margin-bottom: 1rem;
-  font-size: .9rem;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.draft-banner-actions {
-  display: flex;
-  gap: .5rem;
-}
-
-.draft-banner-actions .btn {
-  padding: .5rem .9rem;
-  font-size: .85rem;
-  min-width: 0;
-}
-
-.draft-save-indicator {
-  min-height: 1rem;
-  font-size: .78rem;
-  color: var(--muted);
-  margin: -.3rem 0 0;
-}
-
-/* ---- Contact Intelligence: form actions + WhatsApp bridge ---- */
-.contact-form-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: .75rem;
-}
-
-.contact-whatsapp-bridge {
-  display: inline-flex;
-  align-items: center;
-  gap: .4rem;
-  min-width: 0;
-  background: rgba(37, 211, 102, 0.12);
-  border-color: rgba(37, 211, 102, 0.35);
-  color: #1f9d63;
-}
-
-.contact-whatsapp-bridge svg {
-  width: 1.1rem;
-  height: 1.1rem;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-=======
->>>>>>> origin/Yacoob
 .list {
   display: grid;
   gap: 1.1rem;
@@ -2440,15 +2165,7 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
 }
 
 .marquee {
-<<<<<<< HEAD
-<<<<<<< HEAD
   overflow: hidden;
-=======
-  overflow: visible;
->>>>>>> origin/Yacoob
-=======
-  overflow: hidden;
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
   margin-bottom: 1.85rem
 }
 
@@ -2477,32 +2194,6 @@ body[data-page="career"] .hero-copy h1 .gradient-text {
   -webkit-backdrop-filter: none
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-.logo-card.center-logo {
-  position: relative;
-  z-index: 2;
-  animation: center-logo 10s ease-in-out infinite;
-}
-
-@keyframes center-logo {
-  0%, 20%, 100% {
-    transform: translateY(0) scale(1);
-  }
-
-  35%, 45% {
-    transform: translateY(0) scale(1.4);
-  }
-
-  60% {
-    transform: translateY(1.8rem) scale(1);
-  }
-}
-
->>>>>>> origin/Yacoob
-=======
->>>>>>> ff8933a2471e7fa28cb7da56fef95afd2a284827
 .logo-card img {
   max-height: 100%;
   max-width: 100%;
